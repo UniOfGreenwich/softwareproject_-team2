@@ -26,3 +26,6 @@
 
 ## Referencing 
 
+## Authors
+
+- [nicoletarusnac](https://github.com/nicoletarusnac)
