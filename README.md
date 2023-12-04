@@ -1,16 +1,19 @@
 ## Software Process Model 
 ## Content 
 
-* [Introduction](#introduction)
-* [Software Process Model](#software-process-model)
-  * [Waterfall](#waterfall)
-* [User requirements](#user-requriments)
-* [System requirements specification](#system-requriemtns-specification)
-* [Risk planning](#risk-planning)
-* [Appendix](#appendix)
-* [Glossary](#glossary)
-* [References](#referencing)
-* [Developers](#developers)
+- [Software Process Model](#software-process-model)
+- [Content](#content)
+- [Introduction](#introduction)
+- [User Requriments](#user-requriments)
+- [System Requriemtns Specification](#system-requriemtns-specification)
+  - [**What is system requriments?**](#what-is-system-requriments)
+  - [**What is functional rquriments ?**](#what-is-functional-rquriments-)
+  - [**What is non-functional requiremnts?**](#what-is-non-functional-requiremnts)
+- [Risk Planning](#risk-planning)
+- [Appendix](#appendix)
+- [Glossary](#glossary)
+- [Referencing](#referencing)
+- [Authors](#authors)
 
 ## Introduction 
 
@@ -55,11 +58,12 @@ Users should be able to view and edit their profile, borrowing history and the d
 ## Appendix 
 
 ## Glossary  
+User requirements - is a set/list of instructions/functionalities that a system needs to meet in order to be user friendly and efficient.
+Account management- reffers to user's profile section where they can view/change/delete their personal information and other relevant activies to their acccount.
 
 ## Referencing 
 
 ## Authors
 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
-- [GeneralDavid9797](https://github.com/GeneralDavid9797)
 - [GeneralDavid9797](https://github.com/GeneralDavid9797)
