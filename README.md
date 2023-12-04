@@ -21,14 +21,9 @@ To ensure the application for the library system is as optimal as possible, it s
 In summary, the development of the application for the library system will ensure that the system is dynamic enough to adjust to the needs of the users. The team aims to enhance the interaction between the community and the library system as well as boost the overall library experience via the provision of a convenient and user-friendly interface. The team will ensure that this report includes the provision of detailed descriptions involved in the construction of the application for the library system, as well as observations and valid recommendations that may help in kick-starting the successful execution of this progressive project.
 
 ## User Requriments 
-* User Registration and Login 
+## Software Requirements Specification (SRS) Report 
 
-Users should be able to create their account by providing personal information such as e-mail, password, date of birth, phone number, and student ID.
-* Search and browse
-
-Users should be able to search online for the books, authors, topics, journals. Clicking on a book or journal should display its details such as title, author, summary, and availability status (should display if it's  available online or on-site). 
-
-**Merge conflict occured**
+ 
 
 ### 1. Introduction 
 
@@ -166,7 +161,6 @@ An example of how it needs look in application
 
 ## Referencing 
 
-## Authors
 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
 - [GeneralDavid9797](https://github.com/GeneralDavid9797)
