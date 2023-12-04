@@ -28,27 +28,135 @@ Users should be able to create their account by providing personal information s
 
 Users should be able to search online for the books, authors, topics, journals. Clicking on a book or journal should display its details such as title, author, summary, and availability status (should display if it's  available online or on-site). 
 
-* Rental information 
+**Merge conflict occured**
 
-The available books or journals should be able to rent for 3days, 7days, 14 days. This information should be displayed in the details of available books and journals. 
+### 1. Introduction 
 
-* Renewal system
+#### 1.1 Purpose 
 
-Users should be able the renew the rental period for a current book they holding direclty online in their account.
-* Late fee information and payment
+This Software Requirements Specification (SRS) document outlines the specifications for the development of a comprehensive system that encompasses student and staff account management, payment processing, book rental, journal management, and account deletion functionality. 
 
-Users should be notified about the library's late fee policy and the charges applied with it. Each late day is 10p with maximum fine being the value of the book. It should calculate the fine and inform the account user and should be available to pay it straight away online in the app with a payment validation check.
-* Account Management
+##### 1.2 Scope 
 
-Users should be able to view and edit their profile, borrowing history and the due dates in their account management section.
+The system aims to provide a secure and user-friendly platform for students and staff to manage accounts, facilitate payments, rent books, and manage journals. It also ensures adherence to industry standards for payment security and offers a dynamic approach for handling different card types. 
 
-## System Requriemtns Specification 
+### 2. System Requirements 
 
-### **What is system requriments?**
+#### 2.1 Student Account Requirements 
 
-### **What is functional rquriments ?** 
+- Students can access and edit their accounts. 
+- Students can view their account balance and update it. 
+- Students cannot rent a book if they are in debt until they return the overdue books. 
+- Students can reset their passwords securely through a multi-step verification process. 
+- Account history and activity logs for students, allowing them to track changes and transactions. 
+- Notifications for students when their account balance is low or when a book rental is approaching its due date. 
+- Two-factor authentication for enhanced security in student accounts. 
 
-### **What is non-functional requiremnts?**
+ 
+
+#### 2.2 Staff Account Requirements 
+
+- Staff accounts have different levels of access based on roles, such as administrative, financial, and support roles. 
+- Staff accounts can generate reports on account balances, transaction histories, and overdue books. 
+- Logging and auditing functionalities for staff actions within the system to maintain accountability. 
+
+ 
+
+#### 2.3 Payment Requirements 
+
+- Implement a sophisticated card recognition mechanism capable of discerning card types (Visa, debit, Amex) based on the card number. 
+- Dynamic system logic tailored to card categories. 
+- For Visa and debit cards, prompt users for a three-digit Card Verification Value (CVV) code. 
+- For Amex cards, prompt users for a four-digit CVV code. 
+- Ensure adherence to standard security practices. 
+
+#### 2.4 Book Requirements 
+
+- Maintain a catalog of 20 books in the system. 
+- Include book details: picture, title, author, ISBN, and synopsis. 
+- Allow book rentals for 3, 7, and 14 days. 
+- System prevents renting if the user is in debt until overdue books are returned. 
+- Students can request an extension of the rental period, subject to approval by authorized staff. 
+
+An example of how it needs look in application 
+
+![picture example of how it supposed to look](image.png)
+
+[refference link 1 ]
+
+#### 2.5 Journal Requirements 
+
+- Include 10 journals in the system. 
+- Capture journal details: title and volume. 
+
+#### 2.6 Deleting Account Requirements 
+
+- Only authorized personnel can delete an account. 
+- Display a pop-up confirmation: "Are you sure you want to delete this account?" 
+
+### 3. Functional Requirements 
+
+#### 3.1 Student Account Functionality 
+
+- Login and authentication for students. 
+- Edit account details. 
+- View account balance. 
+- Rent books. 
+
+##### 3.2 Staff Account Functionality 
+
+- Login and authentication for staff. 
+- Access all accounts. 
+- Update account balances. 
+
+##### 3.3 Payment Functionality 
+
+- Card recognition and categorization. 
+- Dynamic CVV prompts based on card type. 
+
+#### 3.4 Book Functionality 
+
+- Book catalog management. 
+- Rental functionality. 
+- Overdue book handling. 
+- Extension request and approval. 
+
+#### 3.5 Journal Functionality 
+
+- Journal catalog management. 
+
+#### 3.6 Account Deletion Functionality 
+
+- Authorization for account deletion. 
+- Confirmation pop-up for account deletion. 
+
+### 4. Non-Functional Requirements 
+
+#### 4.1 Performance 
+
+- System response time: < 2 seconds for standard operations. 
+
+#### 4.2 Dependability 
+
+- System availability: 99.9%. 
+
+#### 4.3 Usability 
+
+- Intuitive user interfaces for both students and staff. 
+
+#### 4.4 Scalability 
+
+- Ability to handle a user base of at least 1000 students and 100 staff members. 
+
+#### 4.5 Security 
+
+- Encryption of sensitive data. 
+- Regular security audits. 
+
+### 5. Conclusion 
+
+- This Software Requirements Specification provides a comprehensive overview of the functionalities and specifications required for the development of the proposed system. Adherence to these requirements will ensure a robust, secure, and user-friendly platform for account management, payment processing, book rental, journal management, and account deletion. 
+
 
 ## Risk Planning 
 
