@@ -88,7 +88,6 @@ Software is deployed into a live environment so that its performance can be test
 ### 6. Maintenance phase 
 It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
 
-
 ## User Requriments 
 
 ## System Requriemtns Specification 
