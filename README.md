@@ -15,6 +15,15 @@
 
 ## Introduction 
 
+## Table
+
+| Username | Tasks | 
+--- | --- 
+[Sam](https://github.com/SamEng001) | [Software Process Model](#software-process-model), [Content](#content), [Table](#table)
+[Zeynep]() | [Software requirements](#system-requriemtns-specification)
+[Nicoleta](https://github.com/nicoletarusnac) | [User requirements](#user-requriments)
+[Oba](https://github.com/GeneralDavid9797) | [Introduction](#introduction), [Risk planning](#risk-planning)
+
 ## Software Process Model 
 A software model process is an arrangement of processes meant to develop software, and it is an abstract representation of the process. Activities like planning, requirement analysis, designing, implementing, testing, and development are processes for developing software.
 
