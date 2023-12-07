@@ -110,6 +110,42 @@ Software is deployed into a live environment so that its performance can be test
 It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
 
 
+User requirements provide a description of what users want from the system. It also ensures that functionalities, usability, and high-level expectations are met, developer can do so by answering this question, "What should the system do for users?"
+
+**System Requirements:**
+
+In this section, we discuss how we will satisfy the user's requirements with our system by using specified technical details, functions, services and constraints.
+
+**Constraints:**
+
+Constraints describe the limitations and functionality of the system. It also considers budget, technological choices, and legal requirements when developing a system.
+
+In our Library system, requirements like staff access control, student payment capability, rental facilities, payment verification, card verification are important. 
+
+### 2. Design phase 
+Design specifications detail technical design requirements, such as programming languages, hardware, information sources, architectures, and services.
+
+High level design phase:
+
+This phase involves listing and understanding the modules involved, along with determining their correlations, generating architecture diagrams, and establishing database tables.
+
+Low level design phase: 
+
+Low-level Design documents contain pseudocode for each module, which helps the programmer write code directly from them. Furthermore, it provides information about interfaces, error messages, dependency issues, and inputs and outputs.
+
+### 3. Implementation phase 
+This phase involves writing the source code in accordance with the requirements. A working code is created based on the physical design specifications. In order to develop a system, small programs called units are written, and then these units are integrated.
+
+### 4. Testing phase
+ By running test cases either manually or automatically, testers check the program for all possible defects. In order to ensure that all requirements are met, the client is also involved in the testing phase. Quality Assurance ensures that all bugs and flaws are repaired during this phase.
+
+### 5. Deployment phase 
+Software is deployed into a live environment so that its performance can be tested. Users can access the software as soon as it has been deployed. In some cases, real-time users are also trained during this phase in order to communicate the benefits of the system.
+
+### 6. Maintenance phase 
+It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
+
+
 ## System Requirements Specification Report 
 ### 1. Introduction 
 #### 1.1 Purpose 
@@ -251,6 +287,7 @@ An example of how it needs look in application
 
 ## User Requirements 
 
+
 In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional. 
 
 ### Functional requirements
@@ -314,13 +351,69 @@ Sophisticated: Highly developed, complex, with sophisticated taste or knowledge.
 
  Synopsis: A short overview of something. 
 
- 
+
+In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional. 
+
+### Functional requirements
+
+Functional requirements are the key features that the system should be able to provide for all the users, they are user-focused and task-oriented.
+
+* User Registration and Login 
+
+Users should be able to create their account by providing personal information such as e-mail, password, date of birth, phone number, and student ID.
+
+* Search and browse
+
+Users should be able to search online for the books, authors, topics, journals. Clicking on a book or journal should display its details such as title, author, summary, and availability status (should display if it's  available online or on-site). 
+
+* Rental information 
+
+The available books or journals should be able to rent for 3days, 7days, 14 days. This information should be displayed in the details of available books and journals. 
+
+* Renewal system
+
+Users should be able the renew the rental period for a current book they holding direclty online in their account.
+
+* Late fee information and payment
+
+Users should be notified about the library's late fee policy and the charges applied with it. Each late day is 10p with maximum fine being the value of the book. It should calculate the fine and inform the account user and should be available to pay it straight away online in the app with a payment validation check.
+
+* Account Management
+
+Users should be able to view and edit their profile, borrowing history and the due dates in their account management section.
+
+
+### Non-functional requirements
+
+Non-functional requirements are usually a bit more technical and are responsible for the quality, performance and security part of the user-system experience.
+
+* Usability 
+
+The system should be easy and straitforward to use, efficient and fast enough.
+
+* Security 
+
+Users should be protected against the data leaking, unauthorized access, and malicious software.
+
+* Portability and compatibility
+
+The system should be able to run on different operating systems and should be compatible with the lastest versions of the most known and used operating system and online environments.
+
+User requirements - is a set/list of instructions/functionalities that a system needs to meet in order to be user friendly and efficient.
+
+Account management- reffers to user's profile section where they can view/change/delete their personal information and other relevant activies to their acccount.
+
+## Risk Planning 
+  
+## Glossary
+
 
 ## Referencing 
 Scribd. (n.d.). What Are The Functional and Non Functional Requirements of A Library Management System | PDF | Librarian | Databases. [online] Available at: https://www.scribd.com/document/177041340/What-Are-the-Functional-and-Non-Functional-Requirements-of-a-Library-Management-System.
 
 ‌
 Lily Wulandari, L. (2017) User Requirements Analysis for digital library application ... - iopscience, IOPScience. Available at: https://iopscience.iop.org/article/10.1088/1742-6596/818/1/012004. 
+
 
 Altexsoft (2021). Functional and Non-functional Requirements: Specification an. [online] AltexSoft. Available at: https://www.altexsoft.com/blog/functional-and-non-functional-requirements-specification-and-types/.
 
@@ -335,6 +428,10 @@ Landau , P. (2022). What Is a Stakeholder? [online] Project Manager. Available a
 Martins, J. (2022). What Is Kanban? A Beginner’s Guide for Agile Teams [2023] • Asana. [online] Asana. Available at: https://asana.com/resources/what-is-kanban [Accessed 1 Dec. 2023]. 
 
  
+
+
+Altexsoft (2021). Functional and Non-functional Requirements: Specification an. [online] AltexSoft. Available at: https://www.altexsoft.com/blog/functional-and-non-functional-requirements-specification-and-types/.
+
 
 ## Authors 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
