@@ -32,6 +32,12 @@
 
 ## Introduction 
 
+This project involves the development of an application for the setup of a library system for an educational institution, such as a university. The purpose of the system is to serve as a means for students and staff members to access various academic services such as library resources and the ability to manage their activity on the application while being dynamic enough to adjust to the needs of the consumers via a user-friendly interface.
+
+To ensure the application for the library system is as optimal as possible, it should be designed in a way that allows users to access specific and exclusive features such as resource accessibility, learning support, assistance for teaching staff, and community collaboration. The software process model to be applied for this project will be the **Waterfall methodology**.  The user and system requirements for this project will be described in this report, and possible risks will be indicated as well as how they can be managed and planned for. The project management plan will also be laid out via a Gantt chart.
+
+The team will ensure that this report includes the provision of detailed descriptions involved in the construction of the application for the library system, as well as observations and valid recommendations that may help in kick-starting the successful execution of this progressive project.
+
 ## Task Table 
 
 | Username | Tasks | 
@@ -70,7 +76,7 @@ As with other development methodologies, waterfall does not include a project's 
 
 Waterfall model consists of the following phases:
 
-![Waterfall model phases!](image.png)
+![Waterfall model phases!](software-process-model.png)
 
 ### 1. Requirement phase
 In a formal requirements document, also called a functional specification, all the requirements, deadlines, and guidelines for the project are analysed.
@@ -163,7 +169,7 @@ The system aims to provide a secure and user-friendly platform for students and 
 
 An example of how it needs look in application 
 
-![picture example of how it supposed to look](image-1.png)
+![picture example of how it supposed to look](Example-image-of-user-interface.png)
 
 
 #### 2.5 Journal Requirements 
