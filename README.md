@@ -24,6 +24,12 @@ To ensure the application for the library system is as optimal as possible, it s
 In summary, the development of the application for the library system will ensure that the system is dynamic enough to adjust to the needs of the users. The team aims to enhance the interaction between the community and the library system as well as boost the overall library experience via the provision of a convenient and user-friendly interface. The team will ensure that this report includes the provision of detailed descriptions involved in the construction of the application for the library system, as well as observations and valid recommendations that may help in kick-starting the successful execution of this progressive project.
 
 ## User Requriments 
+In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional. 
+### Functional requirements
+
+Functional requirements are the key features that the system should be able to provide for all the users, they are user-focused and task-oriented.
+
+
 * User Registration and Login 
 
 Users should be able to create their account by providing personal information such as e-mail, password, date of birth, phone number, and student ID.
@@ -45,6 +51,23 @@ Users should be notified about the library's late fee policy and the charges app
 
 Users should be able to view and edit their profile, borrowing history and the due dates in their account management section.
 
+### Non-functional requirements
+
+Non-functional requirements are usually a bit more technical and are responsible for the quality, performance and security part of the user-system experience.
+
+* Usability 
+
+The system should be easy and straitforward to use, efficient and fast enough.
+
+* Security 
+
+Users should be protected against the data leaking, unauthorized access, and malicious software.
+
+* Portability and compatibility
+
+The system should be able to run on different operating systems and should be compatible with the lastest versions of the most known and used operating system and online environments.
+
+
 ## System Requriemtns Specification 
 
 ### **What is system requriments?**
@@ -59,9 +82,18 @@ Users should be able to view and edit their profile, borrowing history and the d
 
 ## Glossary  
 User requirements - is a set/list of instructions/functionalities that a system needs to meet in order to be user friendly and efficient.
+
 Account management- reffers to user's profile section where they can view/change/delete their personal information and other relevant activies to their acccount.
 
 ## Referencing 
+Scribd. (n.d.). What Are The Functional and Non Functional Requirements of A Library Management System | PDF | Librarian | Databases. [online] Available at: https://www.scribd.com/document/177041340/What-Are-the-Functional-and-Non-Functional-Requirements-of-a-Library-Management-System.
+
+‌
+Lily Wulandari, L. (2017) User Requirements Analysis for digital library application ... - iopscience, IOPScience. Available at: https://iopscience.iop.org/article/10.1088/1742-6596/818/1/012004. 
+
+Altexsoft (2021). Functional and Non-functional Requirements: Specification an. [online] AltexSoft. Available at: https://www.altexsoft.com/blog/functional-and-non-functional-requirements-specification-and-types/.
+
+‌
 
 ## Authors
 
