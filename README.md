@@ -3,24 +3,31 @@
 ## Content 
 
 * [Introduction](#introduction)
+* [Table](#table)
 * [Software Process Model](#software-process-model)
   * [Waterfall](#waterfall)
-* [System requirements specification](#system-requriemtns-specification)
+* [System requirements specification](#system-requirements-specification-report)
   * [Introduction](#1-introduction)
   * [System requirements](#2-system-requirements)
   * [Functional requirements](#3-functional-requirements)
   * [Non functional requirements](#4-non-functional-requirements)
   * [Conclusion](#5-conclusion)
-* [User requirements](#user-requriments)
-* [Risk planning](#risk-planning)
-* [Appendix](#appendix)
+* [User Requirements](#user-requirements)
+* [Possible risks and Risk planning](#risk-planning)
 * [Glossary](#glossary)
 * [References](#referencing)
-* [Developers](#developers)
+* [Authors](#authors)
+* [Appendix](#appendix)
 
 ## Introduction 
 
-## Task Table 
+This project involves the development of an application for the setup of a library system for an educational institution, such as a university. The purpose of the system is to serve as a means for students and staff members to access various academic services such as library resources and the ability to manage their activity on the application while being dynamic enough to adjust to the needs of the consumers via a user-friendly interface.
+
+To ensure the application for the library system is as optimal as possible, it should be designed in a way that allows users to access specific and exclusive features such as resource accessibility, learning support, assistance for teaching staff, and community collaboration. The software process model to be applied for this project will be the **Waterfall methodology**.  The user and system requirements for this project will be described in this report, and possible risks will be indicated as well as how they can be managed and planned for. The project management plan will also be laid out via a Gantt chart.
+
+The team will ensure that this report includes the provision of detailed descriptions involved in the construction of the application for the library system, as well as observations and valid recommendations that may help in kick-starting the successful execution of this progressive project.
+
+## Table 
 
 | Username | Tasks | 
 --- | --- 
@@ -58,7 +65,7 @@ As with other development methodologies, waterfall does not include a project's 
 
 Waterfall model consists of the following phases:
 
-![Waterfall model phases!](image.png)
+![Waterfall model phases!](software-process-model.png)
 
 ### 1. Requirement phase
 In a formal requirements document, also called a functional specification, all the requirements, deadlines, and guidelines for the project are analysed.
@@ -102,12 +109,12 @@ Software is deployed into a live environment so that its performance can be test
 ### 6. Maintenance phase 
 It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
 
-## Software Requirements Specification (SRS) Report 
+
+## System Requirements Specification Report 
 ### 1. Introduction 
 #### 1.1 Purpose 
 
-This Software Requirements Specification (SRS) document outlines the specifications for the development of a comprehensive system that encompasses student and staff account management, payment processing, book rental, journal management, and account deletion functionality. 
-
+This System Requirements Specification (SRS) document outlines the specifications for the development of a comprehensive system that encompasses student and staff account management, payment processing, book rental, journal management, and account deletion functionality. 
 ##### 1.2 Scope 
 
 The system aims to provide a secure and user-friendly platform for students and staff to manage accounts, facilitate payments, rent books, and manage journals. It also ensures adherence to industry standards for payment security and offers a dynamic approach for handling different card types. 
@@ -133,7 +140,6 @@ The system aims to provide a secure and user-friendly platform for students and 
 - Logging and auditing functionalities for staff actions within the system to maintain accountability. 
 
  
-
 #### 2.3 Payment Requirements 
 
 - Implement a sophisticated card recognition mechanism capable of discerning card types (Visa, debit, Amex) based on the card number. 
@@ -152,7 +158,7 @@ The system aims to provide a secure and user-friendly platform for students and 
 
 An example of how it needs look in application 
 
-![picture example of how it supposed to look](image-1.png)
+![picture example of how it supposed to look](Example-image-of-user-interface.png)
 
 
 #### 2.5 Journal Requirements 
@@ -228,18 +234,76 @@ An example of how it needs look in application
 
 - This Software Requirements Specification provides a comprehensive overview of the functionalities and specifications required for the development of the proposed system. Adherence to these requirements will ensure a robust, secure, and user-friendly platform for account management, payment processing, book rental, journal management, and account deletion. 
 
-## User requirements 
+## User Requirements 
+
+In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional. 
+
+### Functional requirements
+
+Functional requirements are the key features that the system should be able to provide for all the users, they are user-focused and task-oriented.
+
+* User Registration and Login 
+
+Users should be able to create their account by providing personal information such as e-mail, password, date of birth, phone number, and student ID.
+
+* Search and browse
+
+Users should be able to search online for the books, authors, topics, journals. Clicking on a book or journal should display its details such as title, author, summary, and availability status (should display if it's  available online or on-site). 
+
+* Rental information 
+
+The available books or journals should be able to rent for 3days, 7days, 14 days. This information should be displayed in the details of available books and journals. 
+
+* Renewal system
+
+Users should be able the renew the rental period for a current book they holding direclty online in their account.
+
+* Late fee information and payment
+
+Users should be notified about the library's late fee policy and the charges applied with it. Each late day is 10p with maximum fine being the value of the book. It should calculate the fine and inform the account user and should be available to pay it straight away online in the app with a payment validation check.
+
+* Account Management
+
+Users should be able to view and edit their profile, borrowing history and the due dates in their account management section.
+
+
+### Non-functional requirements
+
+Non-functional requirements are usually a bit more technical and are responsible for the quality, performance and security part of the user-system experience.
+
+* Usability 
+
+The system should be easy and straitforward to use, efficient and fast enough.
+
+* Security 
+
+Users should be protected against the data leaking, unauthorized access, and malicious software.
+
+* Portability and compatibility
+
+The system should be able to run on different operating systems and should be compatible with the lastest versions of the most known and used operating system and online environments.
+
+User requirements - is a set/list of instructions/functionalities that a system needs to meet in order to be user friendly and efficient.
+
+Account management- reffers to user's profile section where they can view/change/delete their personal information and other relevant activies to their acccount.
 
 ## Risk Planning 
-
-## Appendix 
-
-## Glossary  
+  
+## Glossary
 
 ## Referencing 
+Scribd. (n.d.). What Are The Functional and Non Functional Requirements of A Library Management System | PDF | Librarian | Databases. [online] Available at: https://www.scribd.com/document/177041340/What-Are-the-Functional-and-Non-Functional-Requirements-of-a-Library-Management-System.
+
+‌
+Lily Wulandari, L. (2017) User Requirements Analysis for digital library application ... - iopscience, IOPScience. Available at: https://iopscience.iop.org/article/10.1088/1742-6596/818/1/012004. 
+
+Altexsoft (2021). Functional and Non-functional Requirements: Specification an. [online] AltexSoft. Available at: https://www.altexsoft.com/blog/functional-and-non-functional-requirements-specification-and-types/.
 
 
+## Authors 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
 - [GeneralDavid9797](https://github.com/GeneralDavid9797)
 - [turko06](https://github.com/turko06)
 - [SamEng001](https://github.com/SamEng001)
+
+## Appendix
