@@ -1,34 +1,23 @@
 # Phase 1 - Requirements Engineering
 
 ## Content 
-- [Software Process Model](#software-process-model)
-- [Content](#content)
-- [Introduction](#introduction)
-- [User Requriments](#user-requriments)
-- [System Requriemtns Specification](#system-requriemtns-specification)
-  - [**What is system requriments?**](#what-is-system-requriments)
-  - [**What is functional rquriments ?**](#what-is-functional-rquriments-)
-  - [**What is non-functional requiremnts?**](#what-is-non-functional-requiremnts)
-- [Risk Planning](#risk-planning)
-- [Appendix](#appendix)
-- [Glossary](#glossary)
-- [Referencing](#referencing)
-- [Authors](#authors)
+
 * [Introduction](#introduction)
+* [Table](#table)
 * [Software Process Model](#software-process-model)
   * [Waterfall](#waterfall)
-* [System requirements specification](#system-requriemtns-specification)
+* [System requirements specification](#system-requirements-specification-report)
   * [Introduction](#1-introduction)
   * [System requirements](#2-system-requirements)
   * [Functional requirements](#3-functional-requirements)
   * [Non functional requirements](#4-non-functional-requirements)
   * [Conclusion](#5-conclusion)
-* [User requirements](#user-requriments)
-* [Risk planning](#risk-planning)
-* [Appendix](#appendix)
+* [User Requirements](#user-requirements)
+* [Possible risks and Risk planning](#risk-planning)
 * [Glossary](#glossary)
 * [References](#referencing)
-* [Developers](#developers)
+* [Authors](#authors)
+* [Appendix](#appendix)
 
 ## Introduction 
 
@@ -38,7 +27,7 @@ To ensure the application for the library system is as optimal as possible, it s
 
 The team will ensure that this report includes the provision of detailed descriptions involved in the construction of the application for the library system, as well as observations and valid recommendations that may help in kick-starting the successful execution of this progressive project.
 
-## Task Table 
+## Table 
 
 | Username | Tasks | 
 --- | --- 
@@ -120,11 +109,12 @@ Software is deployed into a live environment so that its performance can be test
 ### 6. Maintenance phase 
 It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
 
-## Software Requirements Specification (SRS) Report 
+
+## System Requirements Specification Report 
 ### 1. Introduction 
 #### 1.1 Purpose 
 
-This Software Requirements Specification (SRS) document outlines the specifications for the development of a comprehensive system that encompasses student and staff account management, payment processing, book rental, journal management, and account deletion functionality. 
+This System Requirements Specification (SRS) document outlines the specifications for the development of a comprehensive system that encompasses student and staff account management, payment processing, book rental, journal management, and account deletion functionality. 
 ##### 1.2 Scope 
 
 The system aims to provide a secure and user-friendly platform for students and staff to manage accounts, facilitate payments, rent books, and manage journals. It also ensures adherence to industry standards for payment security and offers a dynamic approach for handling different card types. 
@@ -150,7 +140,6 @@ The system aims to provide a secure and user-friendly platform for students and 
 - Logging and auditing functionalities for staff actions within the system to maintain accountability. 
 
  
-## System Requriemtns Specification 
 #### 2.3 Payment Requirements 
 
 - Implement a sophisticated card recognition mechanism capable of discerning card types (Visa, debit, Amex) based on the card number. 
@@ -245,7 +234,7 @@ An example of how it needs look in application
 
 - This Software Requirements Specification provides a comprehensive overview of the functionalities and specifications required for the development of the proposed system. Adherence to these requirements will ensure a robust, secure, and user-friendly platform for account management, payment processing, book rental, journal management, and account deletion. 
 
-## User requirements 
+## User Requirements 
 
 In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional. 
 
@@ -294,14 +283,13 @@ Users should be protected against the data leaking, unauthorized access, and mal
 
 The system should be able to run on different operating systems and should be compatible with the lastest versions of the most known and used operating system and online environments.
 
-## Risk Planning 
-
-## Appendix 
-
-## Glossary  
 User requirements - is a set/list of instructions/functionalities that a system needs to meet in order to be user friendly and efficient.
 
 Account management- reffers to user's profile section where they can view/change/delete their personal information and other relevant activies to their acccount.
+
+## Risk Planning 
+  
+## Glossary
 
 ## Referencing 
 Scribd. (n.d.). What Are The Functional and Non Functional Requirements of A Library Management System | PDF | Librarian | Databases. [online] Available at: https://www.scribd.com/document/177041340/What-Are-the-Functional-and-Non-Functional-Requirements-of-a-Library-Management-System.
@@ -311,11 +299,11 @@ Lily Wulandari, L. (2017) User Requirements Analysis for digital library applica
 
 Altexsoft (2021). Functional and Non-functional Requirements: Specification an. [online] AltexSoft. Available at: https://www.altexsoft.com/blog/functional-and-non-functional-requirements-specification-and-types/.
 
-‌
 
-
+## Authors 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
 - [GeneralDavid9797](https://github.com/GeneralDavid9797)
 - [turko06](https://github.com/turko06)
 - [SamEng001](https://github.com/SamEng001)
 
+## Appendix
