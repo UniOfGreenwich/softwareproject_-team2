@@ -38,10 +38,10 @@ The team will ensure that this report includes the provision of detailed descrip
 | Team Member | Student ID | University Email | GitHub Username | Allocated Tasks |
 |----------|----------|----------|----------|----------|
 | **Pelit**, Zeynep | 001221738 | zp9906d@gre.ac.uk | [turko06](https://github.com/turko06) | [System Requirements Specification](#system-requirements-specification-report), [Kanban](#kanban) |
-| **Patel**, Saumya | 001257508 | sp0675@gre.ac.uk | [SamEng001](https://github.com/SamEng001) | [Software Process Model](#software-process-model), [Content](#content), [Table](#table) |
+| **Patel**, Saumya | 001257508 | sp0675d@gre.ac.uk | [SamEng001](https://github.com/SamEng001) | [Software Process Model](#software-process-model), [Content](#content), [Table](#table) |
 | **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | [User Requirements](#user-requirements) |
 | **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | [Introduction](#introduction), [Risks & Risk Planning](#possible-risks--risk-planning), [Table](#table) |
-| **Abdullah**, Ali | 001258128 | aa4759@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | [Gantt chart](#appendix) |
+| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | [Gantt chart](#appendix) |
 
 The table above indicates the allocation of tasks to team members. Each member has contributed to the Glossary and References.
 
