@@ -195,7 +195,7 @@ An example of how it needs look in application
 <details>
 <summary>Picture example of how it suppose to look:</summary>
 
-![picture example of how it supposed to look](Example-image-of-user-interface.png)
+![picture example of how it supposed to look](Example-image-of-User-interface.png)
 </details>
 
 #### 5. Journal Requirements
