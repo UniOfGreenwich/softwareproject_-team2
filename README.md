@@ -7,20 +7,20 @@
 * [Introduction](#introduction)
 * [Table](#table)
 * [Software Process Model](#software-process-model)
-  * [Waterfall](#waterfall)
-  * [Conclusion](#conclusion)
+  * [Waterfall](#waterfall) 
 * [System Requirements Specification](#system-requirements-specification-report)
   * [Introduction](#introduction-1)
   * [System Requirements](#system-requirements)
   * [Functional Requirements](#functional-requirements)
   * [Non-functional Requirements](#non-functional-requirements)
-  * [Conclusion](#conclusion-1)
 * [User Requirements](#user-requirements)
   * [Functional Requirements](#functional-requirements-1)
   * [Non-Functional Requirements](#non-functional-requirements-1)
 * [Possible Risks & Risk planning](#possible-risks--risk-planning)
 * [Kanban](#kanban)
-* [Glossary & References](#glossary)
+* [Glossary](#glossary)
+* [Conclusion](#conclusion)
+* [References](#references)
 * [Authors](#authors)
 * [Appendix](#appendix)
 
@@ -124,12 +124,6 @@ Software is deployed into a live environment so that its performance can be test
 
 #### 6. Maintenance phase
 It is team's job to ensure that the software that they have developed runs smoothly without any bugs or downtime. So for that, regular maintenance is necessary in order to enhance, improve and update the software.
-
-### Conclusion
-
-As we learned from the above, once the requirements have been identified, it is much easier to develop software in the following phases. Customer interaction is very limited in the waterfall model during the development of the software. Only after the product is ready can it be demonstrated to the end users, enabling the team to work more efficiently without the need for a significant number of changes to the process.
-
-Due to the pre-structured nature of all these phases, it is easy to predict deadlines and meet the deadline for the deal. As a result of all these factors, it is easy to develop software efficiently.
 
 ## System Requirements Specification Report
 
@@ -272,12 +266,7 @@ An example of how it needs look in application
 - Maintaining personal information
 - Protecting the privacy of users
 
-### Conclusion
-
-This Software Requirements Specification provides a [comprehensive](#comprehensive-including-every-element-or-almost-every-aspect-wide-ranging) overview of the functionalities and specifications required for the development of the proposed system. Adherence to these requirements will ensure a robust, secure, and user-friendly platform for account management, payment processing, book rental, journal management, and account deletion.
-
 ## User Requirements
-
 
 In order to get the library system as user-friendly as possible there are some basic user requirements that should be met. These are usually divided in functional and non-functional.
 
@@ -363,14 +352,17 @@ Any project must include risk planning which may become even more crucial when t
 
 The case study by Han et al. (2016) highlights the importance of identifying assets at risk, assessing threats and vulnerabilities, and implementing countermeasures to reduce risks. This research contributes to the field of library and information science by providing a framework to evaluate security risks in digital libraries. It enables librarians and information professionals to make informed decisions about resource allocation and security measures.
 
-## Kanban
+## [Kanban](https://github.com/orgs/TeachingMaterial/projects/6)
 
 <details>
 <summary>Kanban:</summary>
 
 ![Kanban](Kanban.png)
 
+The image above displays how the Kanban looked as the project tasks where still in progress.
+
 </details>
+
 
 
 ## Glossary
@@ -401,9 +393,18 @@ The case study by Han et al. (2016) highlights the importance of identifying ass
 
 #### Iteratively: A method or procedure that involves steadily repeating a series of stages or actions.
 
----
+## Conclusion
+
+The chosen software process model, which in this case was the Waterfall model, proved to be effective in managing the project. It allowed for a systematic and well-mannered approach to be followed, ensuring that the final application met the needs of the library system. The system requirements specification played a crucial role in defining the functionality and features of the application. By providing [comprehensive](#comprehensive-including-every-element-or-almost-every-aspect-wide-ranging) documentation of the system requirements, it provided a solid foundation for the development team to work on, ensuring that all necessary components were included and implemented. The user requirements were cautiously analysed and incorporated into the application design through the consideration of user needs and preferences, providing an ideal user interface. A comprehensive risk assessment was conducted for the project through identification and analysis, and appropriate mitigation strategies were carried out to help minimise the impact of risks to increase the possibility of the project's success. A Gantt chart has been provided to showcase a visual representation of the task planning and project management involved with the advancement of this project.
+
+With the aim of constructing a successful application for a library system, the team has applied critical factors for system development such as the software process model, risks & risk planning, necessary requirements, as well as a standard project management strategy to help organise and track tasks. Overall, the project team hopes to have developed an adequate solution for the development that ensures the final product not only meets the functional requirements of the library system but also provides a user-friendly and efficient environment. The application is expected to greatly enhance the management and accessibility of resources within the library system, ultimately benefiting both the library staff and its users.
+
+
+
+## References
+
 <details>
-<summary> References </summary>
+<summary>Reference list shown as follows: </summary>
 
 *SDLC - Waterfall Model* (no date) *Online Tutorials, Courses, and eBooks Library*. Available at: https://www.tutorialspoint.com/sdlc/sdlc_waterfall_model.htm#:~:text=The advantages of waterfall development,model phases one by one (Accessed: 06 December 2023).
 
@@ -455,10 +456,14 @@ Han, Z., Huang, S., Li, H. and Ren, N. (2016) Risk assessment of digital library
 </div>
 
 ## Appendix
+
 <details>
-<summary>Gantt chart:</summary>
+<summary>Gantt Chart:</summary>
 
 ![Gantt chart](Gantt_chart.png)
 </details>
 
 >[Mermaid link](https://mermaid.live/edit#pako:eNqllV1v2yAUhv_KEVK0GzuKcT59VzVrVVXZqqS9WJUbYtOE1YYM8Lqs7X_fwXZS0rjaRckNJjxwznte4JmkKuMkIWsmrV1KwGaFzTncbJjhEEEIc_6rFJoXXFoDX-VaSM61kOt6dsYsv1C6YBbgB7ZwNgun06V0P_e_4akVCrvfV6weWVimLbxMEYT3LSlEzo1VkgdAezQOoyiMaAC9rGanwqSlMdWC79FUCxvANPLIIfYbstPxWGFAFFulLWYNVsGT0o-YETADDCxnRbeGrqTVKiubDN62yqoAr7ytKPYHzVZzYR7hJmdSujVPsPkBo2FvHEDUYLdslZ8qsucggFsED2TUcyS0CL1gxWfFOlfSYrlPYz_3gbGX_qA9h5bQEZy4naBxg3qwT0yj4bRKuTEwQ0PmfpD1zgtf7KETG2Bf2TPplTPdKJFysBt0JI6yFF1rNxwwH3QxZPw3z9XWuRm2zZZoB6SUOZi602Eyw6kPoiqhw80-zj1UuDi7bQW45zvJt5-twWJnLC-OT98J3GhDPUfhcsNmiWsmV0wCfGiq4NrzIjoqOhyWxXzhZMFEnW4shxVPWYk3glpZVquy1TwVOKL9CI8YPFlOOlTsJ2rzxYApU6ddt0W0byJVObfss7LdGa4_FK2W684_gP363J7Ec5aL_4bSGg6uOXgL59LdqwbON-7OO4WbAl769CiAfkNfoNJmU92xrXt7t-WFX0nvxtwndpxedbuHtB4MMY4beoxjv49eCmncBsYeGPuT931cZ0ICUnB8GESG78uzI5YE7VDwJUmwi6eLlbldkqV8xamstGqxkylJrC55QMqty3oq2FqzYj_IM2GVntVPVvVyBWTL5L1Shyn4SZJn8ocko-6kP-7R0XgU9-kgjmlAdiSJJrQbDfpxHA0ngxGl_deA_K34qNurWjwYDZEajkev_wAG5-9R)
+
+
+
