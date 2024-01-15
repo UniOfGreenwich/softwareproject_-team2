@@ -16,3 +16,5 @@
 The table above indicates the allocation of tasks to team members.
 
 ## State Chart Diagram
+
+## Activity Diagram 
