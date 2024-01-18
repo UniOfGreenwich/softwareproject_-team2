@@ -1,6 +1,6 @@
-## Sequence Diagram
+## Sequence Diagram Definition
 Sequence diagram is a Behavioral Unified Modeling Language (ULM) that is used to show the interactions of the active objects  of the system in a sequential order of them occuring. [[1]](#1) They show the sequence in which interactions take place by showing specific objects, referred to as lifelines, and the messages that flow between them. These diagrams may be used to map out the timing of interactions at various phases of the development process and are useful forsystem design, testing, and maintenance. [[2]](#2) 
-## Creating a Sequence Diagram
+##  Constructing Sequence Diagrams
 Sequence diagrams are usually created following a few steps:
 1.	First is identifying the actors/objects: which are all the entities involved in a system. They are defined in the diagram on top wrapped in a rectangle. They are interacting between them with arrows that show the flow of communication and with messages which are shown on top of the arrows. In case of an online library system the following can be objects: user, library system, book database, account database. 
 2.	Second step is stipulating the Use Cases which are the main features of the system such as: book searching, book borrowing, book renewing, paying the fines etc.
@@ -8,82 +8,49 @@ Sequence diagrams are usually created following a few steps:
 4.	Fourth step is drawing separate Use cases diagrams with detailed flow of communication and precise messages. 
 5.	Fifth step is combining the Use cases diagrams if possible in a detailed and understandable way. [[3]](#3) [[4]](#4)
 
-## Use Cases Diagrams
-### Sequence diagram for Searching and Borrowing a book
+## Sequence Diagrams for the Library System
 
-Objects:
-* User 
-* Online library System
-* Book Database 
-* Account Database 
+### Staff User Login and Interactions
+<u>Actors/Objects</u>: Staff user, Login Page, Account Management, Database, App menu, Student Management, Search for Book.
 
-Steps:
-1.	The user initiates a borrow request (uses the library system interface to choose a book and press the borrow request).
+<u>Interactions</u>:
+1.  Staff User picks "Staff" from the first screen.
+2.	The Login Page requests for staff credentials.
+3.	Staff User inputs their credentials.
+4.	The Login Page validates credentials with Account Management (interacting with Database).
+5.	Account Management and Database validates credentials and delivers a confirmation to the Login Page.
+6.	The Login Page links to the App Menu.
+7.	Staff User chooses options from the App Menu:
 
-2.	The library system checks with the book database to see if the book is available for borrowing.
+* Student management:
+    * Selects "View/Update Student Record".
+    * The system presents the "Select Student" page, which contains student names retrieving it from the Database.
+    * The Staff User selects a student.
+    * The system provides tools for editing, deleting, and checking the balance.
+    * Staff User selects an option:
+        * Check Balance: The system displays the current balance and late penalty retrieving it from the Database.
+        * Edit Student Account: The system prompts for new information and saves the changes to the Database, and updates student record.
+         * Delete Student Account: The system requests for confirmation and then deletes the account from the Database, and removes the student record.
+* Search for book:  Staff User enters search criteria, the system retrieves matching books from the Database and display books that fit those criteria.
 
-3.	The book database responds to the library system with availability information.
+### Student User Login and Interactions
+<u>Actors/Objects</u>: Student User, Login Page, Account Management, App Menu, Balance Management,  Payment Getaway, Renting a book, Search for book, Database.
 
-4.	The library system processes the request and if the book is available, the library system contacts the account database to confirm the user's account status and borrowing rights.
+<u>Interactions</u>:
+1.	On the first screen, the Student User selects "Student".
+2.	The Login Page requests for student credentials.
+3.	Student User inputs their credentials.
+4.	The Login Page validates credentials with Account Management (interacting with the Database).
+5.	Account Management and the Database validates credentials and delivers a confirmation to the Login Page.
+6.	Student User picks an option from the App Menu:
+    * Balance Management:
+        * Selects "Check Balance": the system displays the current balance from the Database.
+        * Selects "Pay Late Fee": the system requests for payment details and processes the payment interacting with the Payment Getaway, then updates the balance in the Database, and send a confirmation message to the Student User.
+    * Renting Book:
+         * Selects “Search for Book”: the system will provide a search interface where students can input criteria, in return the system retrieves matching books from the Database and show the results.
+        * Selects “Rent Book”: the system asks for a confirmation from the user and updates the student’s borrowed books list in the Database, labels the book as unavailable, and sends a confirmation message to the user.
+        * Selects “View Borrowed Books”: the system retrieves and show a list of borrowed books from the Database.
 
-5.	The account database verifies the user's account information, including borrowing limits and outstanding fines.
-
-6.	The account database confirms the user's borrowing eligibility with the library system.
-
-7.	If the user meets the eligibility requirements, the library system marks the book as borrowed and sends a confirmation message.
-
-8.	If the user does not meet the eligibility, the library system shows an error message informing the user about the cause.
-
-Diagram available in Appendix.
-### Sequence diagram for Renewing a book
-Objects:
-* User 
-* Online library System
-* Book Database 
-* Account Database 
-
-Steps:
-1. User starts a renewal request (picks the book they wish to renew and selects the "Renew" option from the book details or their borrowings list).
-
-2. The library system verifies renewal eligibility:
-*	It checks to see if the book is presently borrowed by the user. 
-*	Uses the book database to determine whether the book is available for renewal (not reserved, late, etc.).
-*	Checks the account database to check that the user has no outstanding penalties or borrowing limits.
-
-3. If the renewal request is valid:
-*	The library system will show a confirmation message notifying the user of the new due date.
-*	The book database will be updated with the extended due date.
-
-4. If the renewal request is invalid, the library system will show a notice indicating the cause for the refusal (e.g., unavailable, late, penalties), and provides alternatives (returning the book, placing a hold, etc.).
-
-Diagram available in Appendix.
-### Sequence diagram for User pays fines
-Objects:
-* User 
-* Online library System
-* Book Database 
-* Account Database 
-* Payment Getaway
-
-Steps:
-1.	The user initiates the payment procedure (logs into their account, picks the "Pay Fines" option, or examines their account balance, which shows overdue penalties).
-
-2.	The library system accesses the account database to determine the total amount of overdue fines for the user's account.
-
-3.	The library system offers payment choices, including credit and debit cards. User chooses their desired payment method and fills in the details.
-
-4.	Payment Gateway handles payments by authenticating and verifying user information, and then securely executes the payment and deducts the fine amount from the user's designated account.
-
-5.	Payment Gateway provides confirmation message to library system, indicating transaction success or failure.
-
-6.	If payment is successful, the library system will update the account database to reflect the cleared penalties for the user.
-
-7.	The library system provides a confirmation message to the user indicating successful fine payment and updated account balance.
-
-
-8.	If payment fails, the library system shows an error message informing users of payment failure and suggesting troubleshooting steps or other payment options and changes the account database accordingly (for example, recording an unsuccessful payment attempt). 
-
-Diagram available in Appendix.
 ## References
 <a id="1">[1]</a> 
 Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier.  Available at:https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/ 
