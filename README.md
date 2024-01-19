@@ -33,6 +33,8 @@ Sequence diagrams are usually created following a few steps:
          * Delete Student Account: The system requests for confirmation and then deletes the account from the Database, and removes the student record.
 * Search for book:  Staff User enters search criteria, the system retrieves matching books from the Database and display books that fit those criteria.
 
+General Staff User Login and Interactions and Detailed Student Account Management Sequence Diagrams can be found in Appendix [[A1]](#A1) and [[A2]](#A2).
+
 ### Student User Login and Interactions
 <u>Actors/Objects</u>: Student User, Login Page, Account Management, App Menu, Balance Management,  Payment Getaway, Renting a book, Search for book, Database.
 
@@ -51,6 +53,7 @@ Sequence diagrams are usually created following a few steps:
         * Selects “Rent Book”: the system asks for a confirmation from the user and updates the student’s borrowed books list in the Database, labels the book as unavailable, and sends a confirmation message to the user.
         * Selects “View Borrowed Books”: the system retrieves and show a list of borrowed books from the Database.
 
+General Student User Login and Interactions and Detailed Student Search for Book and Rent Sequence Diagrams can be found in Appendix [[A3]](#A3) and [[A4]](#A4).
 ## References
 <a id="1">[1]</a> 
 Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier.  Available at:https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-sequence-diagram/ 
@@ -61,3 +64,26 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id="4">[4]</a> Lucidchart. (2019). How to Draw a Sequence Diagram in UML Available at: https://www.lucidchart.com/pages/how-to-draw-a-sequence-diagram-in-UML 
 ‌
+## Appendix
+
+<details>
+<summary> <a id="A1"> [A1]</a> General Staff User Login and Interactions Sequence Diagram</summary> 
+
+![StaffD](StaffUserDiagram.png)
+</details>
+<details>
+<summary> <a id="A2">[A2]</a> Detailed Student Account Management Sequence  Diagram </summary>
+
+![UpdatD](Upd&Del&CheckDiagram.png)
+</details>
+
+<details>
+<summary> <a id="A3" >[A3]</a> General Student User Login and Interactions Sequence Diagram </summary>  
+
+![StduentD](StudentUserDiagram.png)
+</details>
+<details>
+<summary> <a id="A4">[A4]</a> Detailed Student Search for Book and Rent Sequence Diagram </summary>
+
+![SearchD](Search&RentDiagram.png)
+</details>
