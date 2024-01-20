@@ -32,7 +32,7 @@
 
 ## Use case diagram
 
-In software development, a use case diagram is a graphic representation that shows how system actors interact with the system. By depicting a system's use cases and the roles that interact with them, it encapsulates the dynamic behaviour of the system. [[6]](#6)
+In software development, a use case diagram is a graphic representation that shows how system actors interact with the system. By depicting a system's use cases and the roles that interact with them, it encapsulates the dynamic behaviour of the system. [[5]](#5)
 
 ### Tabular description:
 
@@ -122,21 +122,22 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
 
+
+<a id="2">[2]</a> Bell, D. (2023) Explore the UML sequence diagram, IBM developer. Available at: https://developer.ibm.com/articles/the-sequence-diagram/
+
+<a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
+
 <a id="4">[4]</a> Lucidchart. (2019). How to Draw a Sequence Diagram in UML Available at: https://www.lucidchart.com/pages/how-to-draw-a-sequence-diagram-in-UML 
 
 <a id="5">[5]</a> PlantUML.com. (n.d.). Use case Diagram syntax and features. [online] Available at: https://plantuml.com/use-case-diagram.
 ‌
 
-<a id="6">[6]</a> PlantUML.com. (n.d.). Use case Diagram syntax and features. [online] Available at: https://plantuml.com/use-case-diagram.
-
-## Appendices
+## Appendix
 <details>
 <summary> Use Case Diagrams </summary>
-
 ![Studdent use case diagram](<Student Use Case Daigram.png>)
 
 ![Staff use case diagram](<Staff Use Case Diagram.png>)
-
 </details>
 
 <details>
@@ -152,7 +153,7 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 ![UpdatD](Upd&Del&CheckDiagram.png)
 
 
-<summary> General Student User Login and Interactions Sequence Diagram </summary>  
+<summary>  General Student User Login and Interactions Sequence Diagram </summary>  
 
 ![StduentD](StudentUserDiagram.png)
 
@@ -171,6 +172,8 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <details>
 <summary> Activity Diagram </summary>
+
+</details>
 
 </details>
 
