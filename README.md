@@ -132,10 +132,11 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <a id="5">[5]</a> PlantUML.com. (n.d.). Use case Diagram syntax and features. [online] Available at: https://plantuml.com/use-case-diagram.
 ‌
 
-## Appendix
+## Appendices
 <details>
 <summary> Use Case Diagrams </summary>
-![Studdent use case diagram](<Student Use Case Daigram.png>)
+
+![Student use case diagram](<Student Use Case Daigram.png>)
 
 ![Staff use case diagram](<Staff Use Case Diagram.png>)
 </details>
