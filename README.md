@@ -278,6 +278,10 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ![Components and Notations of UML Activity Diagram](<Activity Diagram Table.png>)
 
+![Activity Diagram student ](<activity diagram 1.png>)
+
+![Activity Diagram Staff ](<activity diagram 2.png>)
+
 </details>
 
 </details>
