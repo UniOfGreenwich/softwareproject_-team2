@@ -261,7 +261,7 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ‌<a id="10">[10]</a> Zheng, J., Feng, Y. and Zhao, Y. (2014) A Unified Modeling Language-Based Design And Application For A Library Management Information System, Sciendo, [online] Available at: https://sciendo.com/article/10.2478/cait-2014-0050.  [Accessed 18 January 2024].
 
-‌<a id="11">[11]</a> Fontoura, M., Pree, W., Rumpe, B. (2022) The UML Profile for Framework Architectures, Google Books, [online] Available at: https://books.google.com/books?hl=en&lr=&id=UVm_HY5EmWcC&oi=fnd&pg=PR10&dq=%22The+Power+and+Purpose+of+UML+Architecture+Diagrams:+Understanding+the+Blueprint+of&ots=4WM51_61hQ&sig=oPRWfEvYNKC7fUE4ijMd59LEItI.  [Accessed 17 January 2024].
+‌<a id="11">[11]</a> Fontoura, M., Pree, W., Rumpe, B. (2002) The UML Profile for Framework Architectures, Google Books, [online] Available at: https://books.google.com/books?hl=en&lr=&id=UVm_HY5EmWcC&oi=fnd&pg=PR10&dq=%22The+Power+and+Purpose+of+UML+Architecture+Diagrams:+Understanding+the+Blueprint+of&ots=4WM51_61hQ&sig=oPRWfEvYNKC7fUE4ijMd59LEItI.  [Accessed 17 January 2024].
 
 ## Authors
 
