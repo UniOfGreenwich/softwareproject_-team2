@@ -44,7 +44,7 @@ The main goal of the phase is to examine the requirements that were acquired in 
 | **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | Introduction, State Chart Diagram, Overall Architecture of the System |, | State Chart Diagram [](#)
 | **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Class Diagram, Gantt Chart |, |  [](#) |
 
-## Describing the application of UML to the Libary System:
+## Describing the application of UML to the Library System:
 An essential component of contemporary library operations is the design and implementation of a library management information system (LMIS) using the Unified Modelling Language (UML). Zheng, Feng, and Zhao's (2014) study investigates the value of applying UML to the planning and development of a library management system. According to the authors, UML offers a standardised, visual depiction of the system, facilitating efficient stakeholder collaboration and communication. Use case, class, and sequence diagrams are examples of UML diagrams that aid in illustrating the needs, architecture, and behaviour of a system.
 
 An LMIS that is more reliable and effective is the outcome of this thorough approach, which guarantees that every facet of the system is taken into account throughout the design stage. UML also makes it easier to identify possible problems and permits changes prior to implementation, which lowers the chance of errors and saves time and money. Libraries can increase user experience, improve information retrieval, streamline operations, and ultimately offer better services to their customers by implementing UML in the design and implementation of an LMIS.
