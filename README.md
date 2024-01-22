@@ -1,26 +1,26 @@
 # Phase 2- System Modelling and Design Phase
 ## Content
-- **Introduction**
+- [**Introduction**](#introduction)
 
-- **Table**
+- [**Table**](#table)
 
-- **Overall Architecture of the System**
+- [**Overall Architecture of the System**](#overall-architecture-of-the-system)
 
-- **Use case Diagram**
+- [**Use case Diagram**](#use-case-diagram)
 
-- **Sequence Diagram**
+- [**Sequence Diagram**](#sequence-diagram)
 
-- **Class Diagram**
+- [**Class Diagram**](#class-diagram)
 
-- **Activity Diagram**
+- [**Activity Diagram**](#activity-diagram)
 
-- **State Chart Diagram**
+- [**State Chart Diagram**](#state-chart-diagram)
 
-- **Reference**
+- [**Reference**](#references)
 
-- **Gantt Chart**
+- [**Appendices**](#appendices)
 
-- **Appendices**
+- [**Gantt Chart**](#gantt-chart)
 
 ## Introduction
 
@@ -28,7 +28,25 @@
 
 ## Overall Architecture of the System
 
+The overall architecture of the system is designed to cater to both Staff and Student users, providing a seamless and intuitive experience. outlines the architecture, emphasizing the login process and subsequent functionalities for each user type.
 
+
+
+**Staff User:**
+
+Upon launching the application, the first screen presents two login options: Staff and Student. If the user selects the Staff option, they are directed to the Staff Login Page. Similarly, selecting the Student option leads to the Student Login Page. After successful login, the user is directed to the main application.
+
+In the Staff interface, a menu is available with options for Student Management, Account Management, and Book Search. Navigating to Student Account Management provides further options, such as View/Update Student Record. Upon selecting this option, a new page, "Select Student," displays all student names. Subsequently, choosing a student leads to a page offering options like Edit, Delete Student Account, Check Balance, Payoff balance and Rent books on behalf of student.
+
+The Check Balance option provides details on the current balance and late fee associated with the student's account.
+
+**Student User:**
+
+For Student users, upon login, the front page opens with options for Balance Management and Renting Books. In the Balance Management section, users can pay late fees and check their account balance.
+
+Choosing the Renting Book option allows students to search for books, rent books, and view a list of borrowed books or journals, check account, check balance, payoff late fee. The architecture ensures a straightforward flow for students, promoting efficient book management.
+
+Overall, the architecture is structured to deliver a user-friendly and organized experience for both Staff and Student users, guiding them through the login process and providing intuitive access to relevant functionalities. The systematic arrangement of screens and options enhances the overall usability and efficiency of the system.
 
 ## Use case diagram
 
@@ -122,11 +140,6 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
 
-
-<a id="2">[2]</a> Bell, D. (2023) Explore the UML sequence diagram, IBM developer. Available at: https://developer.ibm.com/articles/the-sequence-diagram/
-
-<a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
-
 <a id="4">[4]</a> Lucidchart. (2019). How to Draw a Sequence Diagram in UML Available at: https://www.lucidchart.com/pages/how-to-draw-a-sequence-diagram-in-UML 
 
 <a id="5">[5]</a> PlantUML.com. (n.d.). Use case Diagram syntax and features. [online] Available at: https://plantuml.com/use-case-diagram.
@@ -182,3 +195,5 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <summary> State Chart Diagram </summary>
 
 </details>
+
+## Gantt Chart
