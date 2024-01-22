@@ -233,3 +233,4 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <summary> State Chart Diagram </summary>
 
 </details>
+
