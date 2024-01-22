@@ -4,6 +4,8 @@
 
 - **Table**
 
+- **[Description of the UML Application](#describing-the-application-of-uml-to-the-libary-system)**
+
 - **Overall Architecture of the System**
 
 - **Use case Diagram**
@@ -14,7 +16,9 @@
 
 - **Activity Diagram**
 
-- **State Chart Diagram**
+- **[State Chart Diagram](#state-chart-diagram)**
+
+- **[Conclusion](#conclusion)**
 
 - **Reference**
 
@@ -23,6 +27,12 @@
 - **Appendices**
 
 ## Introduction
+In the development of an application of a library system for an educational institution, the System Modelling and Design phase is an essential step. The main goal of this phase is to create computer science diagrams that show the behaviour, structure, and functioning of the system visually. These graphic representations consist of Gantt charts, Use case diagrams, Class diagrams, Activity diagrams, State chart diagrams, and Sequence diagrams. Every diagram has a distinct function that helps comprehend and efficiently build the library system.
+
+Use case diagrams are a tool used to show how a system works from the viewpoint of its users. Sequence diagrams show the order of interactions between items or components, focusing on the dynamic behaviour of the system. Class diagrams are crucial for illustrating the system's static structure. Activity flow diagrams are used to simulate how processes or activities move through a system. The goal of State chart diagrams is to represent the various states and transitions of a system or entity. The timetable and schedule for the project are shown using Gantt charts.
+
+The main goal of the phase is to examine the requirements that were acquired in the previous stage and convert them into a thorough system design. The system's parts, interactions, and information flow can be visualised by applying a variety of modelling tools, which helps to uncover possible problems and make wise design choices.
+
 
 ## Table
 
@@ -33,6 +43,16 @@
 | **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | Sequence Diagram |, | Conculusion [](#) |
 | **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | Introduction, State Chart Diagram, Overall Architecture of the System |, | State Chart Diagram [](#)
 | **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Class Diagram, Gantt Chart |, |  [](#) |
+
+## Describing the application of UML to the Libary System:
+An essential component of contemporary library operations is the design and implementation of a library management information system (LMIS) using the Unified Modelling Language (UML). Zheng, Feng, and Zhao's (2014) study investigates the value of applying UML to the planning and development of a library management system. According to the authors, UML offers a standardised, visual depiction of the system, facilitating efficient stakeholder collaboration and communication. Use case, class, and sequence diagrams are examples of UML diagrams that aid in illustrating the needs, architecture, and behaviour of a system.
+
+An LMIS that is more reliable and effective is the outcome of this thorough approach, which guarantees that every facet of the system is taken into account throughout the design stage. UML also makes it easier to identify possible problems and permits changes prior to implementation, which lowers the chance of errors and saves time and money. Libraries can increase user experience, improve information retrieval, streamline operations, and ultimately offer better services to their customers by implementing UML in the design and implementation of an LMIS.
+
+Software designers can effectively model and create framework architectures with the help of the UML profile for framework architectures, an effective tool. A UML profile, according to Fontoura, Pree, and Rumpe (2002), is an extension mechanism of the Unified Modelling Language (UML) that permits UML to be tailored for particular domains or goals. The UML profile offers a collection of established stereotypes, tagged values, and constraints that are useful for representing and analysing the various components of framework designs. This makes it possible for designers to precisely and consistently represent the fundamental behavioural and structural components of a framework. Designers can specify extension points, illustrate the links between framework components, and more by using the UML profile.
+
+The UML profile for framework architectures is a useful tool that helps software designers model and construct framework architectures efficiently. Fontoura, Pree, and Rumpe (2002) define a UML profile as an extension mechanism of the Unified Modelling Language (UML) that enables UML to be customised for specific domains or objectives. The UML profile provides a set of well-known stereotypes, constraints, and tagged values that are helpful in assessing and describing the different parts of framework designs. This enables designers to accurately and consistently depict the essential structural and behavioural elements of a framework. Using the UML profile, designers may define extension points, show how framework components are connected, and do much more.
+
 
 ## Overall Architecture of the System
 
@@ -64,6 +84,7 @@ Comments | Ensure proper handling of financial transactions for balance updates,
 
 ### Sequence Diagram Definition
 Sequence diagram is a Behavioral Unified Modeling Language (ULM) that is used to show the interactions of the active objects  of the system in a sequential order of them occuring. [[1]](#1) They show the sequence in which interactions take place by showing specific objects, referred to as lifelines, and the messages that flow between them. These diagrams may be used to map out the timing of interactions at various phases of the development process and are useful forsystem design, testing, and maintenance. [[2]](#2) 
+
 ### Constructing Sequence Diagrams
 Sequence diagrams are usually created following a few steps:
 1.	First is identifying the actors/objects: which are all the entities involved in a system. They are defined in the diagram on top wrapped in a rectangle. They are interacting between them with arrows that show the flow of communication and with messages which are shown on top of the arrows. In case of an online library system the following can be objects: user, library system, book database, account database. 
@@ -97,6 +118,7 @@ Sequence diagrams are usually created following a few steps:
 * Search for book:  Staff User enters search criteria, the system retrieves matching books from the Database and display books that fit those criteria.
 
 General Staff User Login and Interactions and Detailed Student Account Management Sequence Diagrams can be found in Appendix.
+
 #### Student User Login and Interactions
 <u>Actors/Objects</u>: Student User, Login Page, Account Management, App Menu, Balance Management,  Payment Getaway, Renting a book, Search for book, Database.
 
@@ -149,6 +171,29 @@ Renting Journals | Student will be able choose Journals and rent the. Journals f
  Borrowed Journals and Book | Students can view their rental history, displaying details such as the books and journals they have borrowed, the rental durations, return status, and any overdue items. This comprehensive view will facilitate a better understanding of their borrowing history. 
 
 ## State Chart Diagram
+State chart diagrams are useful for showing the various states that items in the library system are capable of changing into. They guarantee that the system performs as planned by giving a clear understanding of how the system behaves in response to different situations or stimuli.
+A State chart for a library system is created by a number of steps that aid in illustrating the behaviour and states of the system. A detailed explanation of each step is provided below:
+
+1.	Determine the entities and states of the system: Finding the key players in the university library system is the first step. Books, patrons of libraries, librarians, and the system itself are examples of these entities. Determine the various states that each entity is capable of. For instance, a book may be reserved, loaned, or offered.
+
+2.	Describe the circumstances that lead to state transitions: Determine the circumstances or acts that may result in a state change. These can be internal—like a book being returned—or external—like a member checking out a book. Make a list of all the potential outcomes for each entity.
+
+3.	Establish the starting state: Establish the starting state of every entity during system startup or reset. This state serves as the system's initialization point. For instance, all books might be in the "available" status when the library system first launches.
+
+4.	Describe the transitions and states: For every identified state of an entity, create a state. These states should be represented using UML state symbols. For instance, a state is represented by a rectangle with the state's name printed inside. To illustrate the changes between the states, join them together with arrows. Indicate which transition is caused by on each label.
+
+5.	Add actions and conditions: Actions and conditions can be added to each transition. The conditions outline what must happen for the shift to take place. The activities that take place throughout the transition are represented by actions. When a book is borrowed, for instance, the availability of the book might be the condition, and the action would be to update the book's status and note the borrower's details.
+
+6.	Substates and nested states may be included: If necessary, substates and nested states may be included within a state. This aids in the representation of more intricate behaviour. One way to break down a book's "borrowing" state is into smaller states, such as "book selected" and "book issued."
+
+7.	Examine and improve the State chart: After the State chart has been initially produced, check that it appropriately depicts all states, transitions, circumstances, and actions. As necessary, adjust the chart to make it easier to read and comprehend.
+
+Stakeholders, including developers, designers, and other team members engaged in the system development process, should be informed about the created state chart diagram through appropriate documentation and communication. The system's behaviour can be understood by consulting this documentation, which can also be helpful during the implementation stage.
+One may effectively create state chart diagrams to represent a system's behaviour by following these steps. Requirements relevant to the system being modelled and its scope should be taken into consideration when determining the amount of detail and complexity of the diagram.
+
+
+## Conclusion
+Overall, the System Modelling and Design segment is essential to building the application for the library system. To adequately depict the functionality, behaviour, and structure of the system, this phase focuses on producing software development diagrams, such as Use case diagrams, Sequence diagrams, Class diagrams, Activity diagrams, State chart diagrams, and Gantt charts. The purpose of each diagram is defined, enabling a comprehensive understanding of the system's application design. This phase sets the foundation for the subsequent phases of the report, facilitating the successful implementation of the library system.
 
 ## References
 <a id="1">[1]</a> 
