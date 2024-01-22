@@ -120,7 +120,7 @@ General Student User Login and Interactions and Detailed Student Search for Book
 
 ## Activity Diagram 
 
-An activity diagram, classified as a UML diagram, serves the purpose of illustrating the sequential flow of activities within a given process. Business analysts leverage activity diagrams for the analysis of changes in business processes, depiction of workflows, and modeling intricate algorithms using UML. Through a meticulous examination of business processes via activity diagrams, it becomes possible to identify and streamline sequential operations that could be executed in parallel. 
+[[7]](#7), [[8]](#8), [[9]](#9) An activity diagram, classified as a UML diagram, serves the purpose of illustrating the sequential flow of activities within a given process. Business analysts leverage activity diagrams for the analysis of changes in business processes, depiction of workflows, and modeling intricate algorithms using UML. Through a meticulous examination of business processes via activity diagrams, it becomes possible to identify and streamline sequential operations that could be executed in parallel. 
 
 Use cases, offering a textual elucidation of the business process, may necessitate support from activity diagrams, particularly when intricate interconnections between flows arise. Consequently, activity diagrams serve as valuable input for systemic design and testing processes. The workflow specified in the activity diagram facilitates the creation of detailed system designs and test scenarios. 
 
@@ -128,9 +128,24 @@ A paramount characteristic distinguishing activity diagrams from flowcharts lies
 
 It is essential to note that the depiction of activities in parallel within activity diagrams does not imply that these activities must be performed simultaneously. Rather, this notation signifies the absence of a predetermined order relationship among the activities. 
 
+### Tabular description of staff account:
 
+| Action | Description |
+|-------|-------|
+Log in  | Staff members are required to input their respective email addresses and passwords to access their accounts. Upon successful login, they will gain comprehensive access to all system functionalities. 
+Delete an account  | Staff will be able to delete student accounts. However, a confirmation pop-up will prompt, ensuring that the staff member is certain about the deletion action. 
+Late Penalty |Staff should be able to manage the late penalties for students and pay them off. 
+View Balance | Staff are granted the privilege to view the account balances of students, providing a comprehensive overview of financial information. 
+Book look ups | Staff members can conduct thorough book searches, obtaining information on the availability of books within the system. This feature allows staff to efficiently manage and monitor the status of each book in the inventory. 
 
+### Tabular description of student account:
 
+| Action | Description |
+|-------|-------|
+Log in  | Students are required to input their respective email addresses and passwords to access their accounts. Upon successful login, they will gain comprehensive access to all system functionalities. 
+Renting book  |  Students will be able to choose a book and rent the book for 3 days, 7 days, and 14 days.  
+Renting Journals | Student will be able choose Journals and rent the. Journals for 3 days, 7 days, and 14 days. 
+ Borrowed Journals and Book | Students can view their rental history, displaying details such as the books and journals they have borrowed, the rental durations, return status, and any overdue items. This comprehensive view will facilitate a better understanding of their borrowing history. 
 
 ## State Chart Diagram
 
@@ -154,7 +169,14 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id="6">[6]</a> BoardMix. (n.d.). What Is Activity Diagram. [online] Available at: https://boardmix.com/tips/uml-activity-diagram/.
 
-‌
+‌<a id="7">[7]</a> Visual Paradigm (2019). What is Activity Diagram? [online] Visual-paradigm.com. Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/. 
+
+
+<a id="8">[8]</a> www.mindmanager.com. (n.d.). What is an Activity Diagram? | MindManager. [online] Available at: https://www.mindmanager.com/en/features/activity-diagram/. 
+
+‌<a id="9">[9]</a> tutorialspoint.com (2019). UML - Activity Diagrams. [online] www.tutorialspoint.com. Available at: https://www.tutorialspoint.com/uml/uml_activity_diagram.htm. 
+
+‌ 
 
 ## Appendices
 <details>
@@ -200,13 +222,9 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ## Components and Notations of UML Activity Diagram
 
-
 [[6]](#6)
 
-![Components and Notations of UML Activity Diagram](<../Activity Diagram Table.png>)
-
-
-
+![Components and Notations of UML Activity Diagram](<Activity Diagram Table.png>)
 
 </details>
 
