@@ -1,4 +1,6 @@
 # Phase 2- System Modelling and Design Phase
+<div style="text-align: justify">
+
 ## Content
 - [**Introduction**](#introduction)
 
@@ -19,6 +21,8 @@
 - [**State Chart Diagram**](#state-chart-diagram)
 
 - [**Reference**](#references)
+
+- [**Authors**](#authors)
 
 - [**Appendices**](#appendices)
 
@@ -43,11 +47,11 @@ The main goal of the phase is to examine the requirements that were acquired in 
 | **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Class Diagram, Gantt Chart |, |  [](#) |
 
 ## Describing the application of UML to the Library System:
-An essential component of contemporary library operations is the design and implementation of a library management information system (LMIS) using the Unified Modelling Language (UML). Zheng, Feng, and Zhao's (2014) study investigates the value of applying UML to the planning and development of a library management system. According to the authors, UML offers a standardised, visual depiction of the system, facilitating efficient stakeholder collaboration and communication. Use case, class, and sequence diagrams are examples of UML diagrams that aid in illustrating the needs, architecture, and behaviour of a system.
+An essential component of contemporary library operations is the design and implementation of a library management information system (LMIS) using the Unified Modelling Language (UML). Zheng, Feng, and Zhao's (2014) study investigates the value of applying UML to the planning and development of a library management system. According to the authors, UML offers a standardised, visual depiction of the system, facilitating efficient stakeholder collaboration and communication. Use case, class, and sequence diagrams are examples of UML diagrams that aid in illustrating the needs, architecture, and behaviour of a system. [[10]](#10)
 
 An LMIS that is more reliable and effective is the outcome of this thorough approach, which guarantees that every facet of the system is taken into account throughout the design stage. UML also makes it easier to identify possible problems and permits changes prior to implementation, which lowers the chance of errors and saves time and money. Libraries can increase user experience, improve information retrieval, streamline operations, and ultimately offer better services to their customers by implementing UML in the design and implementation of an LMIS.
 
-Software designers can effectively model and create framework architectures with the help of the UML profile for framework architectures, an effective tool. A UML profile, according to Fontoura, Pree, and Rumpe (2002), is an extension mechanism of the Unified Modelling Language (UML) that permits UML to be tailored for particular domains or goals. The UML profile offers a collection of established stereotypes, tagged values, and constraints that are useful for representing and analysing the various components of framework designs. This makes it possible for designers to precisely and consistently represent the fundamental behavioural and structural components of a framework. Designers can specify extension points, illustrate the links between framework components, and more by using the UML profile.
+Software designers can effectively model and create framework architectures with the help of the UML profile for framework architectures, an effective tool. A UML profile, according to Fontoura, Pree, and Rumpe (2002), is an extension mechanism of the Unified Modelling Language (UML) that permits UML to be tailored for particular domains or goals. [[11]](#11) The UML profile offers a collection of established stereotypes, tagged values, and constraints that are useful for representing and analysing the various components of framework designs. This makes it possible for designers to precisely and consistently represent the fundamental behavioural and structural components of a framework. Designers can specify extension points, illustrate the links between framework components, and more by using the UML profile.
 
 The UML profile for framework architectures is a useful tool that helps software designers model and construct framework architectures efficiently. Fontoura, Pree, and Rumpe (2002) define a UML profile as an extension mechanism of the Unified Modelling Language (UML) that enables UML to be customised for specific domains or objectives. The UML profile provides a set of well-known stereotypes, constraints, and tagged values that are helpful in assessing and describing the different parts of framework designs. This enables designers to accurately and consistently depict the essential structural and behavioural elements of a framework. Using the UML profile, designers may define extension points, show how framework components are connected, and do much more.
 
@@ -55,6 +59,31 @@ The UML profile for framework architectures is a useful tool that helps software
 ## Overall Architecture of the System
 
 The overall architecture of the system is designed to cater to both Staff and Student users, providing a seamless and intuitive experience. outlines the architecture, emphasizing the login process and subsequent functionalities for each user type.
+
+The high-level arrangement and structure of the several parts and subsystems that cooperate to enable a library's operations is referred to as the overall system architecture of a library system. It includes all of the networks, databases, hardware, software, and interfaces that the library needs to effectively manage its resources, serve patrons, and make information retrieval easier. Three basic parts usually make up a library system: the database, the server-side, and the user-side.
+
+1.	User-side: This part is what makes up the user interface that users of the library use to communicate with the system. Self-checkout kiosks, mobile applications, the library's website, and other user-facing gadgets are all included. Users can place holds on materials, renew them, browse the library catalogue, access digital resources, and carry out other operations pertaining to library services via the user-side interface. 
+
+2.	Server-side: User requests that come in from the client-side are processed and managed by the server-side component. It consists of web servers, application servers, and additional processing power that carries out the software logic required to manage user interactions. Along with managing user authentication and session management, the server-side component also handles connectivity with external systems like external databases or payment gateways.
+
+3.	Database: This part of the library is in charge of keeping track of and arranging user data, transaction histories, resource collections, and other pertinent information. It usually comprises of a relational database management system (RDBMS), which makes data manipulation, retrieval, and storage efficient. Books, journals, multimedia files, user accounts, borrowing records, and other library-related information are all stored in the database. 
+
+To improve usefulness and efficiency, a library system may include a number of additional subsystems and services in addition to these essential elements:
+
+- Cataloguing and Data Management: This subsystem manages the tasks of assigning data, cataloguing and categorising library resources, and making sure that indexing is precise and reliable. Users can search for resources using several parameters including title, author, subject, or keywords. 
+
+- Circulation and Loan Management: This subsystem oversees the checking out and checking out of library resources, keeps track of due dates, deals with holds and reservations, and implements circulation rules. Features like automatic check-in and check-out, fine computation, and overdue item reminders might be included. 
+
+- Digital Resource Management: Libraries frequently have systems in place to handle electronic books, journals, databases, and other digital content due to the growing prominence of digital resources. This subsystem manages digital resource licencing, access control, authentication, and usage monitoring.
+
+- Resource sharing and interlibrary loan: Libraries frequently work with other organisations to grant access to materials that are not part of their own collection. Interlibrary loan systems make it easier for libraries to lend and borrow resources from one another, enabling users to make requests for books from other libraries and guaranteeing effective resource sharing. 
+
+- Reporting and Analytics: To evaluate their operations, make wise decisions, and enhance services, libraries produce a range of reports and data. Subsystems for reporting and analytics take data from many areas of the library system, process it, and display it in forms that are relevant to the user, including usage statistics, financial reports, or collection analysis.
+
+- Integration with External Systems: Libraries have the option to incorporate their systems with those of other companies or platforms, including learning management systems, digital content suppliers, and online payment gateways. These interfaces provide easy access to outside resources or services, which improves the library's capabilities and streamlines workflows. 
+
+In general, a library system's system architecture aims to efficiently manage the library's resources while offering users a smooth and intuitive experience. To support the essential operations of the library, it combines server-side processing, client-side interfaces, and a strong database with extra subsystems and connectors to expand its capabilities.
+
 
 **Staff User:**
 
@@ -230,6 +259,17 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ‌<a id="9">[9]</a> tutorialspoint.com (2019). UML - Activity Diagrams. [online] www.tutorialspoint.com. Available at: https://www.tutorialspoint.com/uml/uml_activity_diagram.htm. 
 
+‌<a id="10">[10]</a> Zheng, J., Feng, Y. and Zhao, Y. (2014) A Unified Modeling Language-Based Design And Application For A Library Management Information System, Sciendo, [online] Available at: https://sciendo.com/article/10.2478/cait-2014-0050.  [Accessed 18 January 2024].
+
+‌<a id="11">[11]</a> Fontoura, M., Pree, W., Rumpe, B. (2022) The UML Profile for Framework Architectures, Google Books, [online] Available at: https://books.google.com/books?hl=en&lr=&id=UVm_HY5EmWcC&oi=fnd&pg=PR10&dq=%22The+Power+and+Purpose+of+UML+Architecture+Diagrams:+Understanding+the+Blueprint+of&ots=4WM51_61hQ&sig=oPRWfEvYNKC7fUE4ijMd59LEItI.  [Accessed 17 January 2024].
+
+## Authors
+
+- [nicoletarusnac](https://github.com/nicoletarusnac)
+- [GeneralDavid9797](https://github.com/GeneralDavid9797)
+- [turko06](https://github.com/turko06)
+- [SamEng001](https://github.com/SamEng001)
+- [Ali-Abdullah786](https://github.com/Ali-Abdullah786)
 ‌ 
 
 ## Appendices
@@ -292,3 +332,5 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 </details>
 
 ## Gantt Chart 
+
+</div>
