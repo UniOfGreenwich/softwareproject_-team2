@@ -1,52 +1,42 @@
 # Phase 2- System Modelling and Design Phase
 ## Content
-- [**Introduction**](#introduction)
+- **Introduction**
 
-- [**Table**](#table)
+- **Table**
 
-- [**Overall Architecture of the System**](#overall-architecture-of-the-system)
+- **Overall Architecture of the System**
 
-- [**Use case Diagram**](#use-case-diagram)
+- **Use case Diagram**
 
-- [**Sequence Diagram**](#sequence-diagram)
+- **Sequence Diagram**
 
-- [**Class Diagram**](#class-diagram)
+- **Class Diagram**
 
-- [**Activity Diagram**](#activity-diagram)
+- **Activity Diagram**
 
-- [**State Chart Diagram**](#state-chart-diagram)
+- **State Chart Diagram**
 
-- [**Reference**](#references)
+- **Reference**
 
-- [**Appendices**](#appendices)
+- **Gantt Chart**
 
-- [**Gantt Chart**](#gantt-chart)
+- **Appendices**
 
 ## Introduction
 
 ## Table
 
+| Team Member | Student ID | University Email | GitHub Username | Allocated Tasks |
+|----------|----------|----------|----------|----------|
+| **Pelit**, Zeynep | 001221738 | zp9906d@gre.ac.uk | [turko06](https://github.com/turko06) | Table , Activity Diagram [](#) |
+| **Patel**, Saumya | 001257508 | sp0675d@gre.ac.uk | [SamEng001](https://github.com/SamEng001) |  [](#) Use Case Diagram, Content Table, Overall Architecture of the System [](#) |
+| **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | Sequence Diagram |, | Conculusion [](#) |
+| **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | Introduction, State Chart Diagram, Overall Architecture of the System |, | State Chart Diagram [](#)
+| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Class Diagram, Gantt Chart |, |  [](#) |
+
 ## Overall Architecture of the System
 
-The overall architecture of the system is designed to cater to both Staff and Student users, providing a seamless and intuitive experience. outlines the architecture, emphasizing the login process and subsequent functionalities for each user type.
 
-
-
-**Staff User:**
-
-Upon launching the application, the first screen presents two login options: Staff and Student. If the user selects the Staff option, they are directed to the Staff Login Page. Similarly, selecting the Student option leads to the Student Login Page. After successful login, the user is directed to the main application.
-
-In the Staff interface, a menu is available with options for Student Management, Account Management, and Book Search. Navigating to Student Account Management provides further options, such as View/Update Student Record. Upon selecting this option, a new page, "Select Student," displays all student names. Subsequently, choosing a student leads to a page offering options like Edit, Delete Student Account, Check Balance, Payoff balance and Rent books on behalf of student.
-
-The Check Balance option provides details on the current balance and late fee associated with the student's account.
-
-**Student User:**
-
-For Student users, upon login, the front page opens with options for Balance Management and Renting Books. In the Balance Management section, users can pay late fees and check their account balance.
-
-Choosing the Renting Book option allows students to search for books, rent books, and view a list of borrowed books or journals, check account, check balance, payoff late fee. The architecture ensures a straightforward flow for students, promoting efficient book management.
-
-Overall, the architecture is structured to deliver a user-friendly and organized experience for both Staff and Student users, guiding them through the login process and providing intuitive access to relevant functionalities. The systematic arrangement of screens and options enhances the overall usability and efficiency of the system.
 
 ## Use case diagram
 
@@ -70,7 +60,8 @@ Stimulus | Entering invalid login credentials,  Trying to rent a book that is no
 Response | Preventing the deletion of a student account with outstanding late fees, Disply popup before deleting student account, Validating book details to avoid errors during the rental process, Payment successful, Rented successful. 
 Comments | Ensure proper handling of financial transactions for balance updates, Consider implementing a confirmation step for critical actions like account deletion.
 
-## Sequence Diagram
+## Sequence Diagrams
+
 ### Sequence Diagram Definition
 Sequence diagram is a Behavioral Unified Modeling Language (ULM) that is used to show the interactions of the active objects  of the system in a sequential order of them occuring. [[1]](#1) They show the sequence in which interactions take place by showing specific objects, referred to as lifelines, and the messages that flow between them. These diagrams may be used to map out the timing of interactions at various phases of the development process and are useful forsystem design, testing, and maintenance. [[2]](#2) 
 ### Constructing Sequence Diagrams
@@ -130,6 +121,33 @@ General Student User Login and Interactions and Detailed Student Search for Book
 
 ## Activity Diagram 
 
+[[7]](#7), [[8]](#8), [[9]](#9) An activity diagram, classified as a UML diagram, serves the purpose of illustrating the sequential flow of activities within a given process. Business analysts leverage activity diagrams for the analysis of changes in business processes, depiction of workflows, and modeling intricate algorithms using UML. Through a meticulous examination of business processes via activity diagrams, it becomes possible to identify and streamline sequential operations that could be executed in parallel. 
+
+Use cases, offering a textual elucidation of the business process, may necessitate support from activity diagrams, particularly when intricate interconnections between flows arise. Consequently, activity diagrams serve as valuable input for systemic design and testing processes. The workflow specified in the activity diagram facilitates the creation of detailed system designs and test scenarios. 
+
+A paramount characteristic distinguishing activity diagrams from flowcharts lies in their support for parallel behavior. When aiming to represent the algorithmic logic of multithreaded applications using UML, employing activity diagrams proves to be apt. 
+
+It is essential to note that the depiction of activities in parallel within activity diagrams does not imply that these activities must be performed simultaneously. Rather, this notation signifies the absence of a predetermined order relationship among the activities. 
+
+### Tabular description of staff account:
+
+| Action | Description |
+|-------|-------|
+Log in  | Staff members are required to input their respective email addresses and passwords to access their accounts. Upon successful login, they will gain comprehensive access to all system functionalities. 
+Delete an account  | Staff will be able to delete student accounts. However, a confirmation pop-up will prompt, ensuring that the staff member is certain about the deletion action. 
+Late Penalty |Staff should be able to manage the late penalties for students and pay them off. 
+View Balance | Staff are granted the privilege to view the account balances of students, providing a comprehensive overview of financial information. 
+Book look ups | Staff members can conduct thorough book searches, obtaining information on the availability of books within the system. This feature allows staff to efficiently manage and monitor the status of each book in the inventory. 
+
+### Tabular description of student account:
+
+| Action | Description |
+|-------|-------|
+Log in  | Students are required to input their respective email addresses and passwords to access their accounts. Upon successful login, they will gain comprehensive access to all system functionalities. 
+Renting book  |  Students will be able to choose a book and rent the book for 3 days, 7 days, and 14 days.  
+Renting Journals | Student will be able choose Journals and rent the. Journals for 3 days, 7 days, and 14 days. 
+ Borrowed Journals and Book | Students can view their rental history, displaying details such as the books and journals they have borrowed, the rental durations, return status, and any overdue items. This comprehensive view will facilitate a better understanding of their borrowing history. 
+
 ## State Chart Diagram
 
 ## References
@@ -140,10 +158,24 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
 
+
+<a id="2">[2]</a> Bell, D. (2023) Explore the UML sequence diagram, IBM developer. Available at: https://developer.ibm.com/articles/the-sequence-diagram/
+
+<a id="3">[3]</a> Creately.com. (2022). Sequence Diagram Tutorial – Complete Guide with Examples | Creately. Available at: https://creately.com/guides/sequence-diagram-tutorial/
+
 <a id="4">[4]</a> Lucidchart. (2019). How to Draw a Sequence Diagram in UML Available at: https://www.lucidchart.com/pages/how-to-draw-a-sequence-diagram-in-UML 
 
 <a id="5">[5]</a> PlantUML.com. (n.d.). Use case Diagram syntax and features. [online] Available at: https://plantuml.com/use-case-diagram.
-‌
+
+<a id="6">[6]</a> BoardMix. (n.d.). What Is Activity Diagram. [online] Available at: https://boardmix.com/tips/uml-activity-diagram/.
+
+‌<a id="7">[7]</a> Visual Paradigm (2019). What is Activity Diagram? [online] Visual-paradigm.com. Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-activity-diagram/. 
+
+<a id="8">[8]</a> www.mindmanager.com. (n.d.). What is an Activity Diagram? | MindManager. [online] Available at: https://www.mindmanager.com/en/features/activity-diagram/. 
+
+‌<a id="9">[9]</a> tutorialspoint.com (2019). UML - Activity Diagrams. [online] www.tutorialspoint.com. Available at: https://www.tutorialspoint.com/uml/uml_activity_diagram.htm. 
+
+‌ 
 
 ## Appendices
 <details>
@@ -187,6 +219,12 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <details>
 <summary> Activity Diagram </summary>
 
+## Components and Notations of UML Activity Diagram
+
+[[6]](#6)
+
+![Components and Notations of UML Activity Diagram](<Activity Diagram Table.png>)
+
 </details>
 
 </details>
@@ -195,5 +233,3 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <summary> State Chart Diagram </summary>
 
 </details>
-
-## Gantt Chart
