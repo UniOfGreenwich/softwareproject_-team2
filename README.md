@@ -322,6 +322,8 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ![Activity Diagram Staff ](<activity diagram 2.png>)
 
+(To access the clear activity diagram you can use the code on the file "dc.dio" and paste to the visual studio code with the extension draw.io)
+
 </details>
 
 </details>
