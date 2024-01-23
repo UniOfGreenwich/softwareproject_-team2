@@ -183,6 +183,7 @@ General Staff User Login and Interactions and Detailed Student Account Managemen
 General Student User Login and Interactions and Detailed Student Search for Book and Rent Sequence Diagrams can be found in Appendix. 
 
 ## Class Diagram
+
 A class diagram in software engineering is a form of static structure diagram that shows the classes, attributes, actions (or methods), and relationships between objects in a system. It is created using the Unified Modelling Language (UML).
 [[12]](#12)
 
@@ -280,7 +281,6 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <a id= "12">[12] </a> Visual Paradigm (2019). What is Class Diagram? [online] Visual-paradigm.com. Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/.
 
 ‌
-
 ## Authors
 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
@@ -362,6 +362,8 @@ git commit![Gantt Chart](<Gantt Chart.png>)
 [Mermaid Link](https://mermaid.live/edit#pako:eNqtVdFu2jAU_ZUrS5VaKUGxE9Ykb4ioVR8YldI-rOLFTW7BWmKz2OnGuv77nARKSoF1EhYSF2Mfn3N8r-8LyVSOJCZzLo2ZSbDDCFMg3C64RmDgQrrSBkuY2IVFIeQcuMwhQS3mslvVbcu5wStVldwAfLPDnUzcJJnJ7l-NmRFqvcGl3aQL_xxxriQ6cEsdYB7zXUpdyjYxs5_dA2D6yLuZ1PDKwJ_E8jqIXooCtWmP2EI64OUdRCJ0Vmvd4J5PpRWPFx8gskoYBxLaQ4hsvEY4O-thCA2iXKrKWLPBKPipqu-toRo4GOTloNt0I02l8not6JgvN71jme_AMH_TblWPF40DieDzipcHEFLTQQSuR13PMqcb8dNnrHhRwKjKFsJYe-sKQT2BWeAmJ1oMcGBqMbY8AgeCHJqL2bmalJen8nWspEHr4h1_LPCoReP3FtH_VHdIXINxbytk3JTJAYu3JO57Jgetx9BhfPDoAVcSl6ey6Yg9Owgdz7tebTG6xRlZds_CrI4p7eOM-knFnDan9iTEV5GpAg0_ldwUf9Qos09cSNonGKyz_gO_USFOlrAF1_oIr10Hx0WPIaW9urxunmq9Lu6jqX-98zoE-xDO75fN051f7EVgWxLMxpvquRJS6EX75n_mbb3qaWmIbKTs6w3-53vDrf8etout3Ig4pETbi0Rue9tLgzgjtrJLnJHYhjk-8bowMzKTr3Ypr41KVzIjsalqdEjdOrK-q80k5sKoatK1y7ZrOmTJ5YNSb0vsTxK_kF8kdtkgjKIoCD0_Cof223YVsiJx6A3Cy8tw6PmXEQt99uXVIb9bBDqgXjuYHwY0HIavfwFcXPCm)
 </details>
 
+
+## Gantt Chart 
 
 
 </div>
