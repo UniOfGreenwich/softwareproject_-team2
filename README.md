@@ -184,6 +184,21 @@ General Student User Login and Interactions and Detailed Student Search for Book
 
 ## Class Diagram
 
+A class diagram in software engineering is a form of static structure diagram that shows the classes, attributes, actions (or methods), and relationships between objects in a system. It is created using the Unified Modelling Language (UML).
+[[12]](#12)
+
+The class diagram for the Library Management System is displayed in the appendix. Classes like User, Student, Staff, Library Management, Library Item, Book, and Journal are included.
+
+This class diagram makes use of the relationships "inheritance" and "association."
+
+Class 'is a' for staff and student has a relationship with the user class; class 'is a' for books and journals has a relationship with the libraryitem class. On the other hand, the user class is linked to the library management and item classes.
+
+Since the student class is descended from the user class, it has access to all of the base class's methods and properties. Although it offers additional features, the staff class is likewise descended from the user class.
+
+The library item class is used for searching, renting books, and journaling, whereas the library management system class is used for login and logout. For this reason, both classes are related to the user class.
+
+The return types of  the methods, methods and properties are used inferentially. There is still room for more properties and methods, and return types for methods have not yet been defined.
+
 ## Activity Diagram 
 
 [[7]](#7), [[8]](#8), [[9]](#9) An activity diagram, classified as a UML diagram, serves the purpose of illustrating the sequential flow of activities within a given process. Business analysts leverage activity diagrams for the analysis of changes in business processes, depiction of workflows, and modeling intricate algorithms using UML. Through a meticulous examination of business processes via activity diagrams, it becomes possible to identify and streamline sequential operations that could be executed in parallel. 
@@ -263,6 +278,9 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 ‌<a id="11">[11]</a> Fontoura, M., Pree, W., Rumpe, B. (2002) The UML Profile for Framework Architectures, Google Books, [online] Available at: https://books.google.com/books?hl=en&lr=&id=UVm_HY5EmWcC&oi=fnd&pg=PR10&dq=%22The+Power+and+Purpose+of+UML+Architecture+Diagrams:+Understanding+the+Blueprint+of&ots=4WM51_61hQ&sig=oPRWfEvYNKC7fUE4ijMd59LEItI.  [Accessed 17 January 2024].
 
+<a id= "12">[12] </a> Visual Paradigm (2019). What is Class Diagram? [online] Visual-paradigm.com. Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/.
+
+‌
 ## Authors
 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
@@ -309,6 +327,8 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <details>
 <summary> Class Diagram </summary>
 
+![Class Diagram](<Class Diagram.png>)
+
 </details>
 
 <details>
@@ -333,6 +353,17 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 </details>
 
+
+<details>
+<summary> Gantt Chart </summary>
+
+git commit![Gantt Chart](<Gantt Chart.png>)
+
+[Mermaid Link](https://mermaid.live/edit#pako:eNqtVdFu2jAU_ZUrS5VaKUGxE9Ykb4ioVR8YldI-rOLFTW7BWmKz2OnGuv77nARKSoF1EhYSF2Mfn3N8r-8LyVSOJCZzLo2ZSbDDCFMg3C64RmDgQrrSBkuY2IVFIeQcuMwhQS3mslvVbcu5wStVldwAfLPDnUzcJJnJ7l-NmRFqvcGl3aQL_xxxriQ6cEsdYB7zXUpdyjYxs5_dA2D6yLuZ1PDKwJ_E8jqIXooCtWmP2EI64OUdRCJ0Vmvd4J5PpRWPFx8gskoYBxLaQ4hsvEY4O-thCA2iXKrKWLPBKPipqu-toRo4GOTloNt0I02l8not6JgvN71jme_AMH_TblWPF40DieDzipcHEFLTQQSuR13PMqcb8dNnrHhRwKjKFsJYe-sKQT2BWeAmJ1oMcGBqMbY8AgeCHJqL2bmalJen8nWspEHr4h1_LPCoReP3FtH_VHdIXINxbytk3JTJAYu3JO57Jgetx9BhfPDoAVcSl6ey6Yg9Owgdz7tebTG6xRlZds_CrI4p7eOM-knFnDan9iTEV5GpAg0_ldwUf9Qos09cSNonGKyz_gO_USFOlrAF1_oIr10Hx0WPIaW9urxunmq9Lu6jqX-98zoE-xDO75fN051f7EVgWxLMxpvquRJS6EX75n_mbb3qaWmIbKTs6w3-53vDrf8etout3Ig4pETbi0Rue9tLgzgjtrJLnJHYhjk-8bowMzKTr3Ypr41KVzIjsalqdEjdOrK-q80k5sKoatK1y7ZrOmTJ5YNSb0vsTxK_kF8kdtkgjKIoCD0_Cof223YVsiJx6A3Cy8tw6PmXEQt99uXVIb9bBDqgXjuYHwY0HIavfwFcXPCm)
+</details>
+
+
 ## Gantt Chart 
+
 
 </div>
