@@ -10,7 +10,7 @@
 
 - [**Overall Architecture of the System**](#overall-architecture-of-the-system)
 
-- [**Use case Diagram**](#use-case-diagram)
+- [**Use Case Diagram**](#use-case-diagram)
 
 - [**Sequence Diagram**](#sequence-diagram)
 
@@ -25,8 +25,6 @@
 - [**Authors**](#authors)
 
 - [**Appendices**](#appendices)
-
-- [**Gantt Chart**](#gantt-chart)
 
 ## Introduction
 In the development of an application of a library system for an educational institution, the System Modelling and Design phase is an essential step. The main goal of this phase is to create computer science diagrams that show the behaviour, structure, and functioning of the system visually. These graphic representations consist of Gantt charts, Use case diagrams, Class diagrams, Activity diagrams, State chart diagrams, and Sequence diagrams. Every diagram has a distinct function that helps comprehend and efficiently build the library system.
@@ -111,7 +109,7 @@ Choosing the Renting Book option allows students to search for books, rent books
 
 Overall, the architecture is structured to deliver a user-friendly and organized experience for both Staff and Student users, guiding them through the login process and providing intuitive access to relevant functionalities. The systematic arrangement of screens and options enhances the overall usability and efficiency of the system.
 
-## Use case diagram
+## Use Case Diagram
 
 In software development, a use case diagram is a graphic representation that shows how system actors interact with the system. By depicting a system's use cases and the roles that interact with them, it encapsulates the dynamic behaviour of the system. [[5]](#5)
 
@@ -133,7 +131,7 @@ Stimulus | Entering invalid login credentials,  Trying to rent a book that is no
 Response | Preventing the deletion of a student account with outstanding late fees, Disply popup before deleting student account, Validating book details to avoid errors during the rental process, Payment successful, Rented successful. 
 Comments | Ensure proper handling of financial transactions for balance updates, Consider implementing a confirmation step for critical actions like account deletion.
 
-## Sequence Diagrams
+## Sequence Diagram
 
 ### Sequence Diagram Definition
 Sequence diagram is a Behavioral Unified Modeling Language (ULM) that is used to show the interactions of the active objects  of the system in a sequential order of them occuring. [[1]](#1) They show the sequence in which interactions take place by showing specific objects, referred to as lifelines, and the messages that flow between them. These diagrams may be used to map out the timing of interactions at various phases of the development process and are useful forsystem design, testing, and maintenance. [[2]](#2) 
@@ -269,7 +267,7 @@ A State chart for a library system is created by a number of steps that aid in i
 Stakeholders, including developers, designers, and other team members engaged in the system development process, should be informed about the created state chart diagram through appropriate documentation and communication. The system's behaviour can be understood by consulting this documentation, which can also be helpful during the implementation stage.
 One may effectively create state chart diagrams to represent a system's behaviour by following these steps. Requirements relevant to the system being modelled and its scope should be taken into consideration when determining the amount of detail and complexity of the diagram.
 
-### UML State chart for Student User:
+### UML State Chart for Student User:
 This UML state chart represents the flow of the library system for the student user. It starts with the student user selecting "Student" on the first screen and then proceeds through the login process, validation of credentials, and confirmation. 
 
 The student user can then choose options from the app menu, such as balance management or renting books. Each option has its own set of actions and interactions with the database, payment gateway, and user interface. The state chart provides a visual representation of the different states and transitions in the library system for the student user.
