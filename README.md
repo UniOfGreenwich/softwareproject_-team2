@@ -84,8 +84,18 @@ To improve usefulness and efficiency, a library system may include a number of a
 
 In general, a library system's system architecture aims to efficiently manage the library's resources while offering users a smooth and intuitive experience. To support the essential operations of the library, it combines server-side processing, client-side interfaces, and a strong database with extra subsystems and connectors to expand its capabilities.
 
+An overview of the components and overall structure of the system can be given via Architecture diagrams which highlight the various parts and their connections. These diagrams make it easier to comprehend the general architecture of the system and point out possible areas for improvement or optimization.
 
-**Staff User:**
+<details>
+<summary> Architecture diagram that can be applied to the development of the library system design: </summary>
+
+![Architecture Diagram](<Architecture Diagram.png>)
+Sample Architecture Diagram for Library System (Slide Team, 2023) [[15]](#15)
+
+</details>
+
+
+### Staff User:
 
 Upon launching the application, the first screen presents two login options: Staff and Student. If the user selects the Staff option, they are directed to the Staff Login Page. Similarly, selecting the Student option leads to the Student Login Page. After successful login, the user is directed to the main application.
 
@@ -93,7 +103,7 @@ In the Staff interface, a menu is available with options for Student Management,
 
 The Check Balance option provides details on the current balance and late fee associated with the student's account.
 
-**Student User:**
+### Student User:
 
 For Student users, upon login, the front page opens with options for Balance Management and Renting Books. In the Balance Management section, users can pay late fees and check their account balance.
 
@@ -230,6 +240,16 @@ Renting Journals | Student will be able choose Journals and rent the. Journals f
 
 ## State Chart Diagram
 State chart diagrams are useful for showing the various states that items in the library system are capable of changing into. They guarantee that the system performs as planned by giving a clear understanding of how the system behaves in response to different situations or stimuli.
+
+State machines are frequently used to model complex systems with dynamic behaviour, and the Unified Modelling Language (UML) offers a standardised notation for expressing these state machines, according to Charfi, Mraidha, and Boulet (2012). To guarantee an accurate and effective implementation, though, rigorous optimisation is needed during the compilation of UML state machines into executable code. [[13]](#13)
+
+The compiler can produce code that makes use of the built-in features of the system, resulting in increased efficiency and less resource usage, by examining the behaviour and structure of the models. Finally, by utilising formal approaches and model-driven engineering methodologies, an optimised compilation of UML state machines is an important study topic that facilitates the creation of effective and scalable implementations (Charfi, Mraidha, & Boulet, 2012).
+
+One of the most important tasks in software engineering is to generate workable transition paths from UML state chart diagrams. Using grouping genetic algorithms, Choi and Lim (2018) [[14]](#14) presented a novel method for automatically generating a feasible transition path. The challenge of creating transition paths that minimise the number of transitions while satisfying specific criteria is the main focus of their study. The authors contend that many of the drawbacks of current methods include their excessive processing complexity and poor path development. Choi and Lim provide the idea of grouping genetic algorithms as a solution to these problems. This technique makes use of the genetic algorithm technique to effectively produce workable transition paths.
+
+The suggested method entails classifying the states in the state chart diagram according to their characteristics, after which the transition paths are evolved using genetic operators. The authors show that their method can successfully decrease the search space and increase the effectiveness of the path generation process by employing this grouping methodology. Moreover, the study's experimental findings demonstrate that the suggested strategy beats out other approaches in terms of computational efficiency and path quality.
+
+
 A State chart for a library system is created by a number of steps that aid in illustrating the behaviour and states of the system. A detailed explanation of each step is provided below:
 
 1.	Determine the entities and states of the system: Finding the key players in the university library system is the first step. Books, patrons of libraries, librarians, and the system itself are examples of these entities. Determine the various states that each entity is capable of. For instance, a book may be reserved, loaned, or offered.
@@ -248,6 +268,20 @@ A State chart for a library system is created by a number of steps that aid in i
 
 Stakeholders, including developers, designers, and other team members engaged in the system development process, should be informed about the created state chart diagram through appropriate documentation and communication. The system's behaviour can be understood by consulting this documentation, which can also be helpful during the implementation stage.
 One may effectively create state chart diagrams to represent a system's behaviour by following these steps. Requirements relevant to the system being modelled and its scope should be taken into consideration when determining the amount of detail and complexity of the diagram.
+
+### UML State chart for Student User:
+This UML state chart represents the flow of the library system for the student user. It starts with the student user selecting "Student" on the first screen and then proceeds through the login process, validation of credentials, and confirmation. 
+
+The student user can then choose options from the app menu, such as balance management or renting books. Each option has its own set of actions and interactions with the database, payment gateway, and user interface. The state chart provides a visual representation of the different states and transitions in the library system for the student user.
+
+### UML State Chart for Staff User:
+This UML state chart represents the flow of the library system with the staff user as the main focus. It starts with the LaunchApplication state, where the user is presented with the option to select either Staff or Student login. Depending on the choice, the user is directed to the respective login page (StaffLogin or StudentLogin). After a successful login, the user is directed to the MainApplication state.
+
+In the MainApplication state, the staff user is presented with a menu that includes options for Student Management, Account Management, and Book Search. Selecting any of these options leads to the corresponding states. For example, selecting Student Management leads to the StudentManagement state, where the staff user can view/update student records.
+
+Navigating further into the options within Student Management, such as Edit, Delete Student Account, Check Balance, Payoff Balance, and Rent Books, leads to their respective states. Similarly, the Account Management state allows the staff user to view/update accounts, and the Book Search state enables the staff user to search for books and perform actions like viewing book details and borrowing books.
+
+The Check Balance, Payoff Balance, and Rent Books states provide additional information or actions related to the selected student's account. The ShowBalance, ShowPayoff, and ShowRentBooks states allow the staff user to go back to the previous states. This UML state chart provides a visual representation of the library system's flow and the various states and transitions involved in the staff user's interactions.
 
 
 ## Conclusion
@@ -280,7 +314,12 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 
 <a id= "12">[12] </a> Visual Paradigm (2019). What is Class Diagram? [online] Visual-paradigm.com. Available at: https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-class-diagram/.
 
-‌
+<a id= "13">[13] </a> Charfi, A., Mraidha, C., Boulet, P. (2012) An Optimized Compilation of UML State Machines, IEEE Conference Publication | IEEE Xplore, [online] Available at: https://ieeexplore.ieee.org/abstract/document/6195875/. [Accessed 21 January 2024]. 
+
+<a id= "14">[14] </a> Choi, Y.-M. and Lim, D.-J. (2018) Automatic feasible transition path generation from UML state chart diagrams using grouping genetic algorithms, Information & Software Technology, [online] Available at: https://doi.org/10.1016/j.infsof.2017.09.013. [Accessed 21 January 2024]. 
+
+<a id= "15">[15] </a> Slide Team (2023) Architecture diagram including client and database, [online] Available at: https://www.slideteam.net/architecture-diagram-including-client-and-database.html. [Accessed 20 January 2024]. 
+
 ## Authors
 
 - [nicoletarusnac](https://github.com/nicoletarusnac)
@@ -351,19 +390,27 @@ Visual Paradigm. What is sequence diagram? Learn UML Faster, Better and Easier. 
 <details>
 <summary> State Chart Diagram </summary>
 
+![Student State Chart Diagram](<Student State Chart Diagram.png>)
+
+##### State Chart showcasing the Loan System operation
+
+![State Chart for Loan System](<Loan System Sample.png>)
+
+![Staff State Chart Diagram](<Staff State Chart Diagram.png>)
+
+#### Sample State Chart showcasing the overall Library System functions
+
+![Alt text](<Sample State Chart for Library System.png>)
+
 </details>
 
 
 <details>
 <summary> Gantt Chart </summary>
 
-git commit![Gantt Chart](<Gantt Chart.png>)
+![Gantt Chart](<Gantt Chart.png>)
 
 [Mermaid Link](https://mermaid.live/edit#pako:eNqtVdFu2jAU_ZUrS5VaKUGxE9Ykb4ioVR8YldI-rOLFTW7BWmKz2OnGuv77nARKSoF1EhYSF2Mfn3N8r-8LyVSOJCZzLo2ZSbDDCFMg3C64RmDgQrrSBkuY2IVFIeQcuMwhQS3mslvVbcu5wStVldwAfLPDnUzcJJnJ7l-NmRFqvcGl3aQL_xxxriQ6cEsdYB7zXUpdyjYxs5_dA2D6yLuZ1PDKwJ_E8jqIXooCtWmP2EI64OUdRCJ0Vmvd4J5PpRWPFx8gskoYBxLaQ4hsvEY4O-thCA2iXKrKWLPBKPipqu-toRo4GOTloNt0I02l8not6JgvN71jme_AMH_TblWPF40DieDzipcHEFLTQQSuR13PMqcb8dNnrHhRwKjKFsJYe-sKQT2BWeAmJ1oMcGBqMbY8AgeCHJqL2bmalJen8nWspEHr4h1_LPCoReP3FtH_VHdIXINxbytk3JTJAYu3JO57Jgetx9BhfPDoAVcSl6ey6Yg9Owgdz7tebTG6xRlZds_CrI4p7eOM-knFnDan9iTEV5GpAg0_ldwUf9Qos09cSNonGKyz_gO_USFOlrAF1_oIr10Hx0WPIaW9urxunmq9Lu6jqX-98zoE-xDO75fN051f7EVgWxLMxpvquRJS6EX75n_mbb3qaWmIbKTs6w3-53vDrf8etout3Ig4pETbi0Rue9tLgzgjtrJLnJHYhjk-8bowMzKTr3Ypr41KVzIjsalqdEjdOrK-q80k5sKoatK1y7ZrOmTJ5YNSb0vsTxK_kF8kdtkgjKIoCD0_Cof223YVsiJx6A3Cy8tw6PmXEQt99uXVIb9bBDqgXjuYHwY0HIavfwFcXPCm)
 </details>
-
-
-## Gantt Chart 
-
 
 </div>
