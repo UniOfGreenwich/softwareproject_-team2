@@ -8,4 +8,16 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="9781338596700-uk.jpg" />
+    <None Remove="getimage_a0e084a3-030b-41c8-a86e-5296d39e4221.jpg" />
+    <None Remove="istockphoto-183890264-612x612.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="9781338596700-uk.jpg" />
+    <Resource Include="getimage_a0e084a3-030b-41c8-a86e-5296d39e4221.jpg" />
+    <Resource Include="istockphoto-183890264-612x612.jpg" />
+  </ItemGroup>
+
 </Project>
