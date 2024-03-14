@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:libarysystem_WpfApp"
         mc:Ignorable="d"
-        Title="BalanceManagement" Height="450" Width="800">
+        Title="BalanceManagement" Height="640" Width="360">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="173*"/>
+            <ColumnDefinition Width="73*"/>
+            <ColumnDefinition Width="33*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="6*"/>
+        </Grid.ColumnDefinitions>
+
     </Grid>
 </Window>
