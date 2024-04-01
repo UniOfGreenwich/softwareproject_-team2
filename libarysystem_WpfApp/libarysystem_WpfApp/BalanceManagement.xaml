@@ -15,6 +15,20 @@
             <ColumnDefinition Width="12*"/>
             <ColumnDefinition Width="6*"/>
         </Grid.ColumnDefinitions>
+        <StackPanel Grid.ColumnSpan="6" Margin="0,0,3,0">
+
+            <TextBlock Text="Library Balance Management" FontSize="20" FontWeight="Bold"/>
+            <Label Content="Student ID: "  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtStudentID" HorizontalAlignment="Left" Margin="10,10,0,0" Text=" " VerticalAlignment="Top" Width="120"/>
+            <Label Content="Your current balance:"/>
+            <Label x:Name="lblBalance"/>
+            <Button Content="Check Balance" Click="btnCheckBalance_Click" Margin="0 10" />
+            <Label Content="Payment Amount:"/>
+            <TextBox x:Name="txtPaymentAmount" />
+
+            <Button Content="Pay Outstanding Balance" Click="btnPayOutstandingBalance_Click"/>
+
+        </StackPanel>
 
     </Grid>
 </Window>
