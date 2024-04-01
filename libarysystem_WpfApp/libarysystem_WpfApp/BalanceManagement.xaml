@@ -7,28 +7,29 @@
         mc:Ignorable="d"
         Title="BalanceManagement" Height="640" Width="360">
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="173*"/>
-            <ColumnDefinition Width="73*"/>
-            <ColumnDefinition Width="33*"/>
-            <ColumnDefinition Width="63*"/>
-            <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="6*"/>
-        </Grid.ColumnDefinitions>
-        <StackPanel Grid.ColumnSpan="6" Margin="0,0,3,0">
+        <TextBlock Text="Balance Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="10" RenderTransformOrigin="0.46,0.501"></TextBlock>
+        <StackPanel Margin="20">
+            <Label Content="Student ID: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40"/>
+                        <Label Content="Student Name: " Margin="0, 0" />
+            <Label x:Name="lblBalance" Margin="0,20" HorizontalAlignment="Center">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Content" Value="Current Balance: £0.00" />
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Button x:Name="btnAddBalance" Content="Add Balance" HorizontalAlignment="Center" Margin="0" Click="btnAddBalance_Click"></Button>
 
-            <TextBlock Text="Library Balance Management" FontSize="20" FontWeight="Bold"/>
-            <Label Content="Student ID: "  HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
-            <TextBox x:Name="txtStudentID" HorizontalAlignment="Left" Margin="10,10,0,0" Text=" " VerticalAlignment="Top" Width="120"/>
-            <Label Content="Your current balance:"/>
-            <Label x:Name="lblBalance"/>
-            <Button Content="Check Balance" Click="btnCheckBalance_Click" Margin="0 10" />
-            <Label Content="Payment Amount:"/>
-            <TextBox x:Name="txtPaymentAmount" />
+            <Label x:Name="lblOustandingFee" Margin="0,20" HorizontalAlignment="Center">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Content" Value="Oustanding fee: £0.00" />
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Button x:Name="btnPayLateFee"   Content="Pay fee" HorizontalAlignment="Center" Margin="0" Click="btnPayLateFee_Click"></Button>
 
-            <Button Content="Pay Outstanding Balance" Click="btnPayOutstandingBalance_Click"/>
 
         </StackPanel>
-
     </Grid>
 </Window>
