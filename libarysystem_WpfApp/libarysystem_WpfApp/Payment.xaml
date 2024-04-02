@@ -5,30 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:libarysystem_WpfApp"
         mc:Ignorable="d"
+        Background="#F5EBE0"
+        Foreground="#DDB892"
         Title="Payment" Height="360" Width="360">
     <Grid>
-        <TextBlock Text="Please enter your card details" HorizontalAlignment="Center" Margin="40"></TextBlock>
+        <TextBlock Text="Please enter your card details" HorizontalAlignment="Center" FontWeight="Bold" FontSize="18" Margin="30"></TextBlock>
         <StackPanel Orientation="Vertical" HorizontalAlignment="Left">
-            <Label Content="Card number" Margin="10,70,0,0"/>
+            <Label Content="Card number" Margin="10,70,0,0" FontWeight="Bold"/>
             <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="200" >
-                <TextBox Name="txtCardNumber" Width="200" HorizontalAlignment="Left"/>
+                <TextBox Name="txtCardNumber" Width="200"  HorizontalAlignment="Left"/>
             </Border>
-            <Label Content="Name" Margin="10,5,0,0"/>
+            <Label Content="Name" FontWeight="Bold" Margin="10,5,0,0"/>
             <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="200" >
                 <TextBox Name="txtName" Width="200" HorizontalAlignment="Left"/>
             </Border>
         </StackPanel>
         <StackPanel HorizontalAlignment="Right">
-            <Label Content="Expiration date" Margin="10,70,0,0"/>
+            <Label Content="Expiration date" FontWeight="Bold" Margin="10,70,0,0"/>
             <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="100" >
                 <TextBox Name="txtExpirationDate" Width="100" HorizontalAlignment="Left"/>
             </Border>
-            <Label Content="CVV" Margin="10,5,0,0"/>
+            <Label Content="CVV" FontWeight="Bold" Margin="10,5,0,0"/>
             <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="100" >
                 <TextBox Name="txtCVV" Width="100" HorizontalAlignment="Left"/>
             </Border>
         </StackPanel>
-        <Button Name="btnConfirm" Content="Confirm Payment" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,120" Click="btnConfirm_Click"/>
+        <Button Name="btnConfirm" Content="Confirm Payment" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontWeight="Bold" FontSize="17" Margin="0,0,0,120" Click="btnConfirm_Click"/>
 
     </Grid>
 </Window>

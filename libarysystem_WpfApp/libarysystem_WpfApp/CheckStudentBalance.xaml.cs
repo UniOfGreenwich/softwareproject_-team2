@@ -10,13 +10,13 @@ namespace libarysystem_WpfApp
 {
     public partial class CheckStudentBalance: Window
     {
-        private Dictionary<int, decimal> StudentBalances = new Dictionary<int, decimal>();
+        private Dictionary<int, decimal> Students = new Dictionary<int, decimal>();
 
         OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nr1227e\OneDrive - University of Greenwich\librarysystem_WpfAppH.accdb");
 
         OleDbCommand command;
         OleDbDataReader dr;
-        private decimal StudentBalance = 0;
+        private decimal studentFee;
         public CheckStudentBalance()
         {
             InitializeComponent();
@@ -29,22 +29,21 @@ namespace libarysystem_WpfApp
             int StudentID = int.Parse(txtStudentID.Text); 
             if (!int.TryParse(txtStudentID.Text, out StudentID))
             {
-                MessageBox.Show("Please enter a valid Student I.");
+                MessageBox.Show("Please enter a valid Student ID.");
                 return;
             }
             try
             {
                 connection.Open();
 
-                string selectQuery = "SELECT BalanceAmount FROM StudentBalances WHERE StudentID=@StudentID";
+                string selectQuery = "SELECT OustandingFee FROM Students WHERE StudentID=@StudentID";
                 command = new OleDbCommand(selectQuery, connection);
                 command.Parameters.AddWithValue("@StudentID", StudentID);
                 dr = command.ExecuteReader();
                 if (dr.Read())
                 {
-                    StudentBalance = Convert.ToDecimal(dr[0]);
-                    StudentBalances[StudentID] = StudentBalance; 
-                    MessageBox.Show($"Student ID: ${StudentID}\nBalance:${StudentBalance}");
+                    ViewStudentBalance viewStudent= new ViewStudentBalance(StudentID);
+                    viewStudent.Show();
                 }
                 else
                 {

@@ -22,11 +22,11 @@ namespace libarysystem_WpfApp
     public partial class BalanceManagement : Window
     {
 
-        private decimal studentFee = 0;
-        private string studentName = " ";
+        private decimal studentFee;
+        private string studentName;
 
         private Dictionary<int, decimal> Students = new Dictionary<int, decimal>();
-        private int loggedInUserId = 2;
+        private int loggedInUserId = 3;
 
         // OleDb objects declaration
         OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nr1227e\OneDrive - University of Greenwich\librarysystem_WpfAppH.accdb");
@@ -38,6 +38,7 @@ namespace libarysystem_WpfApp
         {
             InitializeComponent();
             DisplayOutstandingFee();
+            DisplayStudentIDName();
         }
 
 
@@ -55,7 +56,7 @@ namespace libarysystem_WpfApp
                 {
                     studentFee = Convert.ToDecimal(dr[0]);
                     Students[loggedInUserId] = studentFee;
-                    lblOustandingFee.Content = $"Outstanding Fee: ${studentFee}";
+                    lblOustandingFee.Content = $"Outstanding Fee: ${studentFee:F2}";
                 }
                 else
                 {
@@ -74,6 +75,7 @@ namespace libarysystem_WpfApp
         }
         private void DisplayStudentIDName()
         {
+            lblStudentID.Content = "Student ID: " + loggedInUserId;
             try
             {
                 connection.Open();
@@ -84,7 +86,7 @@ namespace libarysystem_WpfApp
                 if (dr.Read())
                 {
                     studentName = Convert.ToString(dr[0]);
-                    lbltxtName.Content = studentName;
+                    lbltxtName.Content = "Student Name: " + studentName;
                 }
                 else
                 {
