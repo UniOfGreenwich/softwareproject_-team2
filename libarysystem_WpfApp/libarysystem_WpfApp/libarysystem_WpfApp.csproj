@@ -8,4 +8,23 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Images\Book 1.jpg" />
+    <None Remove="Images\Book 2.jpg" />
+    <None Remove="Images\Book 3.jpg" />
+    <None Remove="Images\books.png" />
+    <None Remove="Images\home.png" />
+    <None Remove="Images\house.png" />
+    <None Remove="Images\user.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Book 1.jpg" />
+    <Resource Include="Images\Book 2.jpg" />
+    <Resource Include="Images\Book 3.jpg" />
+    <Resource Include="Images\books.png" />
+    <Resource Include="Images\house.png" />
+    <Resource Include="Images\user.png" />
+  </ItemGroup>
+
 </Project>
