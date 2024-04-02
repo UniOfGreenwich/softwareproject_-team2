@@ -40,10 +40,10 @@ namespace libarysystem_WpfApp
         }
         class Program
         {
-            static void Main(string[] args)
+            static void LoginWindow (string[] args)
             {
                 // Dummy data for student and staff accounts
-                string[] studentAccounts = { "zp9906d@gre.ac.uk", "abc123@gre.ac.uk", "xyz789@gre.ac.uk", "student1@gre.ac.uk", "student2@gre.ac.uk" };
+                string[] studentAccounts = { "zp9906d@gre.ac.uk", "aa4759n@gre.ac.uk", "sp0675d@gre.ac.uk", "of1104h@gre.ac.uk", "nr1227e@gre.ac.uk" };
                 string[] staffAccounts = { "staff1@gre.ac.uk", "staff2@gre.ac.uk", "staff3@gre.ac.uk", "staff4@gre.ac.uk", "staff5@gre.ac.uk" };
 
                 Console.WriteLine("Welcome to Library System");
@@ -60,21 +60,25 @@ namespace libarysystem_WpfApp
                     return;
                 }
 
-                // Check if email exists in student accounts
-                if (Array.Exists(studentAccounts, element => element == email))
+                // Input password
+                Console.Write("Password: ");
+                string password = Console.ReadLine();
+
+                // Check if email and password match student accounts
+                if (Array.Exists(studentAccounts, element => element == email) && IsValidPassword(password))
                 {
                     Console.WriteLine("Login successful! Welcome, student.");
                     // Proceed with student actions
                 }
-                // Check if email exists in staff accounts
-                else if (Array.Exists(staffAccounts, element => element == email))
+                // Check if email and password match staff accounts
+                else if (Array.Exists(staffAccounts, element => element == email) && IsValidPassword(password))
                 {
                     Console.WriteLine("Login successful! Welcome, staff.");
                     // Proceed with staff actions
                 }
                 else
                 {
-                    Console.WriteLine("Login failed. Email not found.");
+                    Console.WriteLine("Login failed. Incorrect email or password.");
                 }
             }
 
@@ -91,9 +95,16 @@ namespace libarysystem_WpfApp
                     return false;
                 }
             }
+
+            // Function to validate password (just checking if it's not empty for simplicity)
+            static bool IsValidPassword(string password)
+            {
+                return !string.IsNullOrEmpty(password);
+            }
         }
     }
 }
 
-     
- 
+
+
+
