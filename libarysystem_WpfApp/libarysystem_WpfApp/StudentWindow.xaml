@@ -4,31 +4,91 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:libarysystem_WpfApp"
+        xmlns:userControls="clr-namespace:libarysystem_WpfApp"
         mc:Ignorable="d"
-        Title="StudentWindow" Height="640" Width="360">
+        Title="StudentWindow" Height="640" Width="360"
+        Background="#F5EBE0">
+    <Window.Resources>
+        <Style x:Key="RoundedButtonStyle" TargetType="Button">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border BorderThickness="0"
+                                Padding="{TemplateBinding Padding}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="{TemplateBinding Background}"
+                                CornerRadius="10">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
     <Grid>
-        <Label Content="Student Homepage" HorizontalAlignment="Center" Height="37" Margin="0,48,0,0" VerticalAlignment="Top" Width="152" FontSize="16" FontFamily="Global User Interface"/>
-        <Image HorizontalAlignment="Left" Height="141" Margin="51,124,0,0" VerticalAlignment="Top" Width="94" Source="/9781338596700-uk.jpg"/>
-        <Image HorizontalAlignment="Left" Height="141" Margin="205,124,0,0" VerticalAlignment="Top" Width="100" Source="/getimage_a0e084a3-030b-41c8-a86e-5296d39e4221.jpg"/>
-        <Label Content="Book 1" HorizontalAlignment="Left" Margin="68,269,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="32" Width="54" FontFamily="Global User Interface" FontSize="14">
+        <Rectangle Fill="#DDB892" Margin="0,0,0,539"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="24,312,0,0" Fill="#DDB892" VerticalAlignment="Top" Width="150"/>
+        <Rectangle HorizontalAlignment="Left" Height="28" Margin="193,312,0,0" Fill="#DDB892" VerticalAlignment="Top" Width="128"/>
+
+        <Label Content="Student Homepage" HorizontalAlignment="Center" Height="37" Margin="0,20,0,0" VerticalAlignment="Top" Width="208" FontSize="22" FontWeight="Medium" FontFamily="Global User Interface" RenderTransformOrigin="0.625,-1.155"/>
+
+        <Image HorizontalAlignment="Left" Height="116" Margin="52,172,0,0" VerticalAlignment="Top"
+               Width="94" Source="/Images/ComputerNetworks.png"/>
+        <Image HorizontalAlignment="Left" Height="128" Margin="203,166,0,0" VerticalAlignment="Top"
+               Width="99" Source="/Images/EngineeringMaths.png"/>
+        <Label Content="Computer Networks" HorizontalAlignment="Left" Margin="30,312,0,0"
+               VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="26" Width="150"
+               FontFamily="Global User Interface" FontSize="14">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-1.255"/>
+                    <RotateTransform Angle="0"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <Label Content="Book 2" HorizontalAlignment="Left" Margin="229,269,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Height="32" Width="54" FontFamily="Global User Interface" FontSize="14">
+        <Label Content="Engineering Maths" HorizontalAlignment="Left" Margin="193,313,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" 
+               Height="26" Width="137" FontFamily="Global User Interface" FontSize="14">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
                     <SkewTransform/>
-                    <RotateTransform Angle="-1.255"/>
+                    <RotateTransform Angle="0"/>
                     <TranslateTransform/>
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
+
+        <userControls:clearableSearchBox Width="250" Height="40" BoundText="Search Books Here" Loaded="clearableSearchBox_Loaded" VerticalAlignment="Top" Margin="51,107,59,0"/>
+
+        <Button Content="Student Account Management" HorizontalAlignment="Center" Margin="0,377,0,0" VerticalAlignment="Top" Height="45" Width="279" 
+                Background="#DDB892" FontSize="16" FontWeight="Medium" Style="{StaticResource RoundedButtonStyle}"/>
+        <Button Content="Rent Books" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top" Height="45" Width="280" 
+        Background="#DDB892" FontSize="16" FontWeight="Medium" Style="{StaticResource RoundedButtonStyle}"/>
+
+        <Grid VerticalAlignment="Bottom" Height="70" Background="#DDB892">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Background="Transparent" BorderThickness="0">
+                <Viewbox>
+                    <Image Source="/Images/house.png"/>
+                </Viewbox>
+            </Button>
+            <Button Grid.Column="1" Background="Transparent" BorderThickness="0">
+                <Viewbox>
+                    <Image Source="Images/books.png"/>
+                </Viewbox>
+            </Button>
+            <Button Grid.Column="2" Background="Transparent" BorderThickness="0" x:Name="profileButton" Click="profileButton_Click">
+                <Viewbox>
+                    <Image Source="/Images/user.png"/>
+                </Viewbox>
+            </Button>
+        </Grid>
     </Grid>
 </Window>

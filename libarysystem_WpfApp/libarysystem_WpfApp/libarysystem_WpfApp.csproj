@@ -9,15 +9,19 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="9781338596700-uk.jpg" />
-    <None Remove="getimage_a0e084a3-030b-41c8-a86e-5296d39e4221.jpg" />
-    <None Remove="istockphoto-183890264-612x612.jpg" />
+    <None Remove="Images\books.png" />
+    <None Remove="Images\ComputerNetworks.png" />
+    <None Remove="Images\EngineeringMaths.png" />
+    <None Remove="Images\house.png" />
+    <None Remove="Images\user.png" />
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="9781338596700-uk.jpg" />
-    <Resource Include="getimage_a0e084a3-030b-41c8-a86e-5296d39e4221.jpg" />
-    <Resource Include="istockphoto-183890264-612x612.jpg" />
+    <Resource Include="Images\books.png" />
+    <Resource Include="Images\ComputerNetworks.png" />
+    <Resource Include="Images\EngineeringMaths.png" />
+    <Resource Include="Images\house.png" />
+    <Resource Include="Images\user.png" />
   </ItemGroup>
 
 </Project>

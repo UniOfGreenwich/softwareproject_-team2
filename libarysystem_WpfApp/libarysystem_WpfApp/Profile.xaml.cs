@@ -11,30 +11,23 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using System.Data.OleDb;
 
 namespace libarysystem_WpfApp
 {
     /// <summary>
-    /// Interaction logic for StudentWindow.xaml
+    /// Interaction logic for Profile.xaml
     /// </summary>
-    public partial class StudentWindow : Window
+    public partial class Profile : Window
     {
-        public StudentWindow()
+        public Profile()
         {
-            InitializeComponent(); 
+            InitializeComponent();
         }
-
-        private void profileButton_Click(object sender, RoutedEventArgs e)
+        private void homeButton_Click(object sender, RoutedEventArgs e)
         {
-            Profile profile = new Profile();
-            profile.Show();
+            StudentWindow studentWindow = new StudentWindow();
+            studentWindow.Show();
             this.Close();
-        }
-
-        private void clearableSearchBox_Loaded(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
