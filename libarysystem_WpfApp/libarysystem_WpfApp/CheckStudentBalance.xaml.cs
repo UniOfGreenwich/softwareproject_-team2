@@ -1,0 +1,65 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Data.OleDb;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows;
+
+namespace libarysystem_WpfApp
+{
+    public partial class CheckStudentBalance: Window
+    {
+        private Dictionary<int, decimal> Students = new Dictionary<int, decimal>();
+
+        OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nr1227e\OneDrive - University of Greenwich\librarysystem_WpfAppH.accdb");
+
+        OleDbCommand command;
+        OleDbDataReader dr;
+        private decimal studentFee;
+        public CheckStudentBalance()
+        {
+            InitializeComponent();
+        }
+
+        //function for retrieving student balance based on Student ID
+        private void btnVerifyStudent_Click(object sender, RoutedEventArgs e)
+        {
+
+            int StudentID = int.Parse(txtStudentID.Text); 
+            if (!int.TryParse(txtStudentID.Text, out StudentID))
+            {
+                MessageBox.Show("Please enter a valid Student ID.");
+                return;
+            }
+            try
+            {
+                connection.Open();
+
+                string selectQuery = "SELECT OustandingFee FROM Students WHERE StudentID=@StudentID";
+                command = new OleDbCommand(selectQuery, connection);
+                command.Parameters.AddWithValue("@StudentID", StudentID);
+                dr = command.ExecuteReader();
+                if (dr.Read())
+                {
+                    ViewStudentBalance viewStudent= new ViewStudentBalance(StudentID);
+                    viewStudent.Show();
+                }
+                else
+                {
+                    MessageBox.Show("Student not found or balance is unavailable.");
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving balance: {ex.Message}");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
+
+    }
+}
