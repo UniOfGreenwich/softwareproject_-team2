@@ -18,138 +18,129 @@ using System.Data.OleDb;
 
 namespace libarysystem_WpfApp
 {
-    
+
     public partial class BalanceManagement : Window
     {
-    
-        private decimal studentBalance = 0;
-        private Dictionary<int, decimal> StudentBalances = new Dictionary<int, decimal>();
+
+        private decimal studentFee = 0;
+        private string studentName = " ";
+
+        private Dictionary<int, decimal> Students = new Dictionary<int, decimal>();
         private int loggedInUserId = 2;
-        decimal daysLate = 50;
 
         // OleDb objects declaration
-        OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nicol\OneDrive\Documents\librarysystem_WpfApp.accdb");
+        OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nr1227e\OneDrive - University of Greenwich\librarysystem_WpfAppH.accdb");
         OleDbCommand command;
         OleDbDataReader dr;
 
-      
+
         public BalanceManagement()
         {
-            InitializeComponent(); 
-            UpdateBalanceDisplay(); 
-            DisplayOutstandingFee(); 
+            InitializeComponent();
+            DisplayOutstandingFee();
         }
 
-        // function to update balance display
-        private void UpdateBalanceDisplay()
-        {
-            try 
-            {
-                connection.Open(); 
-
-               
-                string selectQuery = "SELECT BalanceAmount FROM StudentBalances WHERE studentID=@StudentID";
-                command = new OleDbCommand(selectQuery, connection); 
-                command.Parameters.AddWithValue("@StudentID", loggedInUserId); 
-                dr = command.ExecuteReader(); 
-                if (dr.Read()) 
-                {
-                    studentBalance = Convert.ToDecimal(dr[0]); 
-                    StudentBalances[loggedInUserId] = studentBalance; 
-                    lblBalance.Content = $"Balance: ${studentBalance}"; 
-                }
-                else 
-                {
-                    MessageBox.Show("Student not found or balance is unavailable."); 
-                }
-            }
-            catch (Exception ex) { 
-                MessageBox.Show($"Error retrieving balance: {ex.Message}"); 
-            }
-            finally // close connection
-            {
-                connection.Close(); 
-            }
-        }
 
         // function to display outstanding fee
         private void DisplayOutstandingFee()
         {
-            decimal lateFee = ComputeLateFee(daysLate); 
-            lblOustandingFee.Content = $"Outstanding Fee: ${lateFee}"; 
-        }
-
-        //function for adding balance button click
-        private void btnAddBalance_Click(object sender, RoutedEventArgs e)
-        {
-            decimal amountToAdd; 
-            if (decimal.TryParse( 
-                Microsoft.VisualBasic.Interaction.InputBox("Enter the amount to add:", "Add Balance"), 
-                out amountToAdd)) 
+            try
             {
-                var result = MessageBox.Show($"Add ${amountToAdd} to your balance?", "Confirm Payment", MessageBoxButton.YesNo); 
-                if (result == MessageBoxResult.Yes) 
+                connection.Open();
+                string selectQuery = "SELECT OustandingFee FROM Students WHERE studentID=@StudentID";
+                command = new OleDbCommand(selectQuery, connection);
+                command.Parameters.AddWithValue("@StudentID", loggedInUserId);
+                dr = command.ExecuteReader();
+                if (dr.Read())
                 {
-                    Payment paymentWindow = new Payment(); 
-                    if (paymentWindow.ShowDialog() == true) //Show and execute functions from payment window 
-                    {
-                        studentBalance += amountToAdd; 
-                        UpdateDatabaseBalance(loggedInUserId); 
-                        UpdateBalanceDisplay(); 
-                        MessageBox.Show($"Payment successful! Updated balance : ${studentBalance}"); 
-                    }
+                    studentFee = Convert.ToDecimal(dr[0]);
+                    Students[loggedInUserId] = studentFee;
+                    lblOustandingFee.Content = $"Outstanding Fee: ${studentFee}";
+                }
+                else
+                {
+                    MessageBox.Show("Student not found or balance is unavailable.");
                 }
             }
-        }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving balance: {ex.Message}");
+            }
+            finally // close connection
+            {
+                connection.Close();
+            }
 
-        // function to update database balance
+        }
+        private void DisplayStudentIDName()
+        {
+            try
+            {
+                connection.Open();
+                string selectQuery = "SELECT Name FROM Students WHERE studentID=@StudentID";
+                command = new OleDbCommand(selectQuery, connection);
+                command.Parameters.AddWithValue("@StudentID", loggedInUserId);
+                dr = command.ExecuteReader();
+                if (dr.Read())
+                {
+                    studentName = Convert.ToString(dr[0]);
+                    lbltxtName.Content = studentName;
+                }
+                else
+                {
+                    MessageBox.Show("Student not found");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error retrieving student name: {ex.Message}");
+            }
+            finally
+            {
+                connection.Close();
+            }
+        }
         private void UpdateDatabaseBalance(int loggedInUserId)
         {
-            try 
+            try
             {
-                connection.Open(); 
-                string updateQuery = "UPDATE StudentBalances SET BalanceAmount=@NewBalance WHERE studentID=@StudentID"; 
-                command = new OleDbCommand(updateQuery, connection); 
-                command.Parameters.AddWithValue("@NewBalance", studentBalance); 
-                command.Parameters.AddWithValue("@StudentID", loggedInUserId); 
-                command.ExecuteNonQuery(); 
+                connection.Open();
+                string updateQuery = "UPDATE Students SET   OustandingFee=@NewOustandingFee WHERE studentID=@StudentID";
+                command = new OleDbCommand(updateQuery, connection);
+                command.Parameters.AddWithValue("@NewOutstandingFee", studentFee);
+                command.Parameters.AddWithValue("@StudentID", loggedInUserId);
+                command.ExecuteNonQuery();
             }
-            catch (Exception ex) 
+            catch (Exception ex)
             {
-                MessageBox.Show($"Error updating balance: {ex.Message}"); 
+                MessageBox.Show($"Error updating balance: {ex.Message}");
             }
-            finally 
+            finally
             {
-                connection.Close(); 
+                connection.Close();
             }
         }
 
         // function for paying late fee button click
         private void btnPayLateFee_Click(object sender, RoutedEventArgs e)
         {
-            decimal lateFee = ComputeLateFee(daysLate); 
-            if (lateFee > studentBalance) 
+            decimal amount = 0;
+            if (decimal.TryParse(
+            Microsoft.VisualBasic.Interaction.InputBox("Enter the amount to pay:", "Add Balance"), out amount))
             {
-                MessageBox.Show("You do not have enough balance to cover the late fee."); 
+                var result = MessageBox.Show($"Add ${amount} ?", "Confirm Payment", MessageBoxButton.YesNo);
+                if (result == MessageBoxResult.Yes)
+                {
+                    Payment paymentWindow = new Payment();
+                    if (paymentWindow.ShowDialog() == true) //Show and execute functions from payment window 
+                    {
+                        studentFee += amount;
+                        UpdateDatabaseBalance(loggedInUserId);
+                        DisplayOutstandingFee();
+                        MessageBox.Show($"Payment successful! Updated balance : ${studentFee}");
+                    }
+                }
             }
-            else 
-            {
-                studentBalance -= lateFee; 
-
-                MessageBox.Show("Payment successful!"); 
-
-                UpdateDatabaseBalance(loggedInUserId); 
-                UpdateBalanceDisplay(); 
-
-                daysLate = 0; 
-                DisplayOutstandingFee(); 
-            }
-        }
-
-        // function to calculate the late fee
-        private decimal ComputeLateFee(decimal daysLate)
-        {
-            return daysLate * 0.10m; 
         }
     }
 }

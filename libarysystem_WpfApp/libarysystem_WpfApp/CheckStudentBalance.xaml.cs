@@ -12,7 +12,8 @@ namespace libarysystem_WpfApp
     {
         private Dictionary<int, decimal> StudentBalances = new Dictionary<int, decimal>();
 
-        OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nicol\OneDrive\Documents\librarysystem_WpfApp.accdb");
+        OleDbConnection connection = new OleDbConnection(@"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\nr1227e\OneDrive - University of Greenwich\librarysystem_WpfAppH.accdb");
+
         OleDbCommand command;
         OleDbDataReader dr;
         private decimal StudentBalance = 0;

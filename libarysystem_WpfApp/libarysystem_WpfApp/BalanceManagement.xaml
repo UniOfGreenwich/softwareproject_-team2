@@ -9,17 +9,15 @@
     <Grid>
 		<TextBlock Text="Balance Management" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="10" RenderTransformOrigin="0.46,0.501"></TextBlock>
 		<StackPanel Margin="20">
-			<Label Content="Student ID: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40"/>
-			<Label Content="Student Name: " Margin="0, 0" />
-			<Label x:Name="lblBalance" Margin="0,20" HorizontalAlignment="Center">
-				<Label.Style>
-					<Style TargetType="{x:Type Label}">
-						<Setter Property="Content" Value="Current Balance: £0.00" />
-					</Style>
-				</Label.Style>
-			</Label>
-			<Button x:Name="btnAddBalance" Content="Add Balance" HorizontalAlignment="Center" Margin="0" Click="btnAddBalance_Click"></Button>
-			<Label x:Name="lblOustandingFee" Margin="0,20" HorizontalAlignment="Center">
+            <Label Content="Student ID: " HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,40"/>
+            <Label x:Name="lbltxtName" Margin="0,20" HorizontalAlignment="Left" Width="257">
+                <Label.Style>
+                    <Style TargetType="{x:Type Label}">
+                        <Setter Property="Content" Value="Student Name:  " />
+                    </Style>
+                </Label.Style>
+            </Label>
+            <Label x:Name="lblOustandingFee" Margin="0,20" HorizontalAlignment="Center">
 				<Label.Style>
 					<Style TargetType="{x:Type Label}">
 						<Setter Property="Content" Value="Oustanding fee: £0.00" />
