@@ -13,13 +13,15 @@
 
  * [Student and Staff Home Page](##32-student-and-staff-home-page)
 
- * [Balance managment and payment](#33-balance-managment-and-payment-page)
+ * [Balance management and payment](#33-balance-managment-and-payment-page)
 
  * [Renting the books and journals](#34-renting-the-books-and-journals)
-
+   
 [**Testing**](#4-testing)
 
-[**Conculusion**](#5-conculusion)
+  * [Login Page Testing ](#4-login-page-testing)
+
+[**Conclusion**](#5-conculusion)
 
 ## 1. Introduction
 
@@ -33,30 +35,44 @@ Central to our workflow is the structured utilization of Git, facilitating colla
 
 To document our progress and facilitate comprehensive understanding, a README.md file will serve as a repository for vital project information. Task assignments, implementation insights, testing methodologies, and outcomes will be systematically documented, providing a clear and informative narrative of our activities during Phase 3
 
-
 ## 2. Table
  
 | Team Member | Student ID | University Email | GitHub Username | Allocated Tasks |
 |----------|----------|----------|----------|----------|
 | **Pelit**, Zeynep | 001221738 | zp9906d@gre.ac.uk | [turko06](https://github.com/turko06) | Table , Login Page, GitHub Flow [](#) |
-| **Patel**, Saumya | 001257508 | sp0675d@gre.ac.uk | [SamEng001](https://github.com/SamEng001) |  [](#) Staff Page[](#) |
-| **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | Payment Page, Student and Staff Balance Managment |, | Conculusion [](#) |
+| **Patel**, Saumya | 001257508 | sp0675d@gre.ac.uk | [SamEng001](https://github.com/SamEng001) |  [](#) Student Page[](#) |
+| **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | Payment Page, Student and Staff management |, | Conclusion [](#) |
 | **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | Staff and Student Renting book and journal page, Late Penalty |,  [](#)
-| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Student Home Page|, |  [](#) |
-
+| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Staff Home Page|, |  [](#) |
 
 ## 3. Implementation 
 
-### 3.1 Login Page 
+### 3.1 Login Page
+
+![alt text](image-2.png)
+    
+    When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
+
+ ![alt text](image-3.png)
 
 ### 3.2 Student and Staff Home Page 
 
-### 3.3 Balance managment and payment page 
+### 3.3 Balance management and payment page 
 
 ### 3.4 Renting the books and journals 
 
+## 4. Testing 
 
-### 4. Testing 
+### 4. Login Page Testing
 
+![alt text](image.png)
 
-### 5. Conculusion 
+       
+       If the password and the user name doesn’t match it raises a issue saying "invalid username or password" and takes the user back to the log in page .                                                                                                                                                                                                                                                                                                                             
+
+![alt text](image-1.png)
+
+    If the password and the username match on the system matches this window will pop up saying "Login Successfully!"
+
+### 5. Conclusion 
+
