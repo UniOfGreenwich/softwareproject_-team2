@@ -23,11 +23,26 @@ namespace libarysystem_WpfApp
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
         private void homeButton_Click(object sender, RoutedEventArgs e)
         {
             StudentWindow studentWindow = new StudentWindow();
             studentWindow.Show();
             this.Close();
         }
+=======
+
+        private void HomeButton_Click(object sender, RoutedEventArgs e)
+        {
+            StaffHomepage staff = new StaffHomepage();
+            staff.Show();
+            this.Close();
+        }
+
+        private void logoutButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+>>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     }
 }
