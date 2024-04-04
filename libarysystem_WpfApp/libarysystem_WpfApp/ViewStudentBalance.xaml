@@ -12,7 +12,7 @@
     <Grid>
         <TextBlock Text="Check Student Balance" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,30" RenderTransformOrigin="0.46,0.501"></TextBlock>
         <StackPanel Margin="20">
-            <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="200" Margin="35,70,0,0" HorizontalAlignment="Left" >
+            <Border BorderBrush="Black" CornerRadius="10"  BorderThickness="1" Padding="0" Width="200" Margin="35,70,0,0" HorizontalAlignment="Left" >
                 <Label x:Name="SlblStudentID" Margin="0,0" HorizontalAlignment="Left" Width="257" FontSize="15" FontWeight="Bold">
                     <Label.Style>
                         <Style TargetType="{x:Type Label}">
@@ -21,7 +21,7 @@
                     </Label.Style>
                 </Label>
                 </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="250" HorizontalAlignment="Center" Margin="0,35,0,0">
+            <Border BorderBrush="Black" CornerRadius="10"  BorderThickness="1" Padding="0" Width="250" HorizontalAlignment="Center" Margin="0,35,0,0">
                 <Label x:Name="SlbltxtName" Margin="0,0" HorizontalAlignment="Left" Width="257" FontSize="15" FontWeight="Bold">
                     <Label.Style>
                         <Style TargetType="{x:Type Label}">
@@ -30,7 +30,7 @@
                     </Label.Style>
                 </Label>
                 </Border>
-            <Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="200" HorizontalAlignment="Left" Margin="35,35,0,0">
+            <Border BorderBrush="Black" BorderThickness="1" CornerRadius="10"  Padding="0" Width="200" HorizontalAlignment="Left" Margin="35,35,0,0">
                 <Label x:Name="SlblOustandingFee" Margin="0,0" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold">
                     <Label.Style>
                         <Style TargetType="{x:Type Label}">
@@ -40,7 +40,7 @@
                 </Label>
                 </Border>
      
-                <Button x:Name="btnPayLateFeeStaff"   Content="Pay Student fee" HorizontalAlignment="Center" Margin="0, 40" FontWeight="Bold" FontSize="17" Click="btnPayLateFeeStaff_Click"></Button>
+                <Button x:Name="btnPayLateFeeStaff"  Padding="10" Content="Pay Student fee" HorizontalAlignment="Center" Margin="0, 40" FontWeight="Bold" FontSize="17" Click="btnPayLateFeeStaff_Click"></Button>
 
         </StackPanel>
         </Grid>
