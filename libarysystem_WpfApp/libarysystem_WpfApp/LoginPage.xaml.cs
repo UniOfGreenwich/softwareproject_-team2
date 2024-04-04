@@ -1,7 +1,7 @@
 ﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-using Finisar.SQLite;
+//using Finisar.SQLite;
 using libarysystem_WpfApp.UserControls;
 
 namespace libarysystem_WpfApp
