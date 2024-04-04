@@ -128,6 +128,8 @@ The layout of the ViewStudentBalance page consists of a title positioned at the 
 
 ### 3.4 Renting the books and journals 
 
+---------
+
 ## 4. Testing 
 
 ### 5. Conclusion 
