@@ -36,5 +36,12 @@ namespace libarysystem_WpfApp
         {
 
         }
+        private void StudentManagementButton_Click(object sender, RoutedEventArgs e)
+        {
+            BalanceManagement balanceManagement = new BalanceManagement();
+            balanceManagement.Show();
+            this.Close();
+        }
+
     }
 }
