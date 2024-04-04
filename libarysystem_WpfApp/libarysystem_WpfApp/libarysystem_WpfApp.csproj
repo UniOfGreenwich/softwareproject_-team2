@@ -13,6 +13,8 @@
     <None Remove="Images\Book 2.jpg" />
     <None Remove="Images\Book 3.jpg" />
     <None Remove="Images\books.png" />
+    <None Remove="Images\ComputerNetworks.png" />
+    <None Remove="Images\EngineeringMaths.png" />
     <None Remove="Images\home.png" />
     <None Remove="Images\house.png" />
     <None Remove="Images\user.png" />
@@ -25,12 +27,11 @@
     <Resource Include="Images\Book 2.jpg" />
     <Resource Include="Images\Book 3.jpg" />
     <Resource Include="Images\books.png" />
+    <Resource Include="Images\ComputerNetworks.png" />
+    <Resource Include="Images\EngineeringMaths.png" />
     <Resource Include="Images\house.png" />
     <Resource Include="Images\user.png" />
-<<<<<<< HEAD
-=======
 
->>>>>>> 009816d68ac0f46e9071f70af8745aa1dd0b1c73
     <None Remove="Images\background.jpg" />
   </ItemGroup>
 
