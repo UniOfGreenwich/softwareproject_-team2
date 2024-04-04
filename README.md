@@ -9,18 +9,20 @@
 
 [**Implementation**](#3-implementation)
 
- * [Login Page](##31-login-page)
+ * [Login Page](#31-login-page)
 
- * [Student and Staff Homepage](##32-student-and-staff-home-page)
+ * [Student and Staff Homepage](#32-student-and-staff-homepage)
 
- * [Balance management and payment](#33-balance-managment-and-payment-page)
+ * [Balance management and payment](#33-balance-management-and-payment-page)
 
  * [Renting the books and journals](#34-renting-the-books-and-journals)
    
 [**Testing**](#4-testing)
 
 
-[**Conclusion**](#5-conculusion)
+[**Conclusion**](#5-conclusion)
+
+[**Appendix**](#6-appendix)
 
 ## 1. Introduction
 
@@ -128,9 +130,36 @@ The layout of the ViewStudentBalance page consists of a title positioned at the 
 
 ### 3.4 Renting the books and journals 
 
+#### Rent books
+
+The C# code within the RentBook class initializes the window and manages events related to searching and renting books. It initializes a dictionary named booksInventory to store the inventory of available books. Upon window initialization, the InitializeBooksInventory method populates this inventory with academic books and their quantities. The SearchBooksButton_Click method handles the event when the user clicks the "Search Books" button, allowing them to select a book from the combo box (cmbBooks). If the selected book is available, its details are displayed, and the user can proceed with the rental process.
+
+The XAML markup defines the layout and appearance of the RentBook window. It contains UI elements such as text blocks, text boxes, combo boxes, and buttons arranged within a stack panel. The window title, "Rent Book," is displayed prominently, and fields for entering the student ID and selecting a book are provided. Upon clicking the "Search Books" button, the corresponding event handler (SearchBooksButton_Click) is triggered, enabling students to search for and potentially rent books.
+
+#### Staff verification
+
+Staff verification window serves as a user interface for staff members to verify their identity before accessing restricted functionalities. The window contains fields for entering the staff ID and password within text boxes and a password box, respectively. Upon entering the required credentials, staff members can click the "Proceed" button to initiate the verification process. The layout is simple and intuitive, with clear labels and input fields, facilitating smooth interaction for staff members during the verification process.
+
+#### Late payments
+
+Late Student Payment window within a library management system crafted using the Windows Presentation Foundation (WPF) framework. This window serves as a user interface for processing late payments from students for overdue library books. The layout features input fields for entering the student ID, book title, purchase date, ISBN, and book price. Users can input the relevant details pertaining to the late payment transaction. Upon completing the required fields, users can click the "Pay Now" button to initiate the payment process. The design emphasizes simplicity and clarity, with distinct labels and input fields, facilitating a seamless user experience during late payment processing for overdue library materials.
+
+#### Issue books
+
+This window is exclusively accessible to staff members and serves as a user interface for issuing books to students. The layout encompasses input fields for entering the student ID and ISBN of the book to be issued, along with a combo box (cmbBooks) for selecting the book from the available inventory. Staff members can input the requisite details to issue books to students efficiently. Upon entering the necessary information, staff members can utilize the "Search Books" button to initiate the book search process. The design prioritizes simplicity and functionality, offering clear labels and input fields to streamline the book issuing procedure for staff members within the library management system.
+
 ---------
 
 ## 4. Testing 
 
-### 5. Conclusion 
+## 5. Conclusion 
 
+## 6. Appendix
+
+![StudentHomepage](https://github.com/TeachingMaterial/softwareproject_-team2/assets/146332575/ebd86cae-8c99-43a9-a903-0e0acac922c6)
+
+![IssueBooks](https://github.com/TeachingMaterial/softwareproject_-team2/assets/146332575/cf65c80c-f053-410e-8e0a-c7fa69855e9b)
+
+![StaffVerification](https://github.com/TeachingMaterial/softwareproject_-team2/assets/146332575/5e0dacb9-3a31-454b-906e-3c66334ba425)
+
+![LatePayments](https://github.com/TeachingMaterial/softwareproject_-team2/assets/146332575/f42bbfce-6d9a-4f5c-8079-47d52a22ffba)
