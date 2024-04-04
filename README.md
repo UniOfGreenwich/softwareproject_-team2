@@ -47,32 +47,44 @@ To document our progress and facilitate comprehensive understanding, a README.md
 
 ## 3. Implementation 
 
-### 3.1 Login Page
+### 3.1 User Page 
 
-![alt text](1.jpg)
-    
-    When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
+User page provides a user interface for selecting between two types of users (staff and student) in a library system. It presents a window with two buttons labeled "Staff" and "Student", respectively. When the user clicks on one of these buttons, the program records the user's selection (whether they are a staff member or a student) and then proceeds to open a login page tailored to the selected user type.
 
- ![alt text](2.jpg)
+Essentially, this code serves as the entry point for users to access the library system, directing them to the appropriate login page based on their role. By capturing this initial user selection, the program can customize the subsequent interactions and functionalities according to the user's role within the library system. This segregation of user roles is fundamental for managing access permissions, privileges, and functionalities tailored to the specific needs and responsibilities of staff and students within the library environment.
 
-### 3.2 Student and Staff Home Page 
+### 3.2 Login Page
 
-### 3.3 Balance management and payment page 
+#### Authentication: 
 
-### 3.4 Renting the books and journals 
+The primary goal is to authenticate users based on their provided credentials (username and password).
+
+#### User Distinction: 
+
+The application distinguishes between two types of users: students and staff. The login process is tailored accordingly to verify the credentials provided by each type of user.
+
+#### User Interface Interaction:
+
+The code interacts with the UI elements of the login page, such as text boxes for entering usernames and password boxes for entering passwords. It captures the user input and utilizes it for authentication.
+
+#### Navigation:
+
+Upon successful authentication, the code directs users to their respective homepages - either the student homepage or the staff homepage. This implies that the application has different functionalities or views tailored for each type of user.
+
+#### Feedback on Invalid Credentials:
+
+If the provided credentials do not match any stored credentials, the code provides feedback to the user by displaying a message box indicating that the entered username or password is invalid.
+
+Overall, the aim is to establish a secure and user-friendly login process that allows authorized users (students and staff) to access their designated functionalities within the library system application while maintaining the integrity and security of the system.
+
+
+### 3.3 Student and Staff Home Page 
+
+### 3.4 Balance management and payment page 
+
+### 3.5 Renting the books and journals 
 
 ## 4. Testing 
-
-### 4. Login Page Testing
-
-![alt text](3.jpg)
-
-       
-       If the password and the user name doesn’t match it raises a issue saying "invalid username or password" and takes the user back to the log in page .                                                                                                                                                                                                                                                                                                                             
-
-![alt text](4.jpg)
-
-    If the password and the username match on the system matches this window will pop up saying "Login Successfully!"
 
 ### 5. Conclusion 
 
