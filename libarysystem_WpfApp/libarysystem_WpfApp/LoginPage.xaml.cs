@@ -1,7 +1,7 @@
-﻿using System.Windows;
+﻿using System.Security.Cryptography.X509Certificates;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
-//using Finisar.SQLite;
 using libarysystem_WpfApp.UserControls;
 
 namespace libarysystem_WpfApp
@@ -11,36 +11,67 @@ namespace libarysystem_WpfApp
     /// </summary>
     public partial class LoginPage : Window
     {
-        string[] username = { "aa4759n@gre.ac.uk", "sp1234@gre.ac.uk", "nc2345@gre.ac.uk", "ob9876@gre.ac.uk", "zl4657@gre.ac.uk" };
-        string[] password = { "sunday@1", "sniper@2", "monday@3", "friday@4", "leader@5" };
-        public LoginPage()
+        string[] studentUsername = { "aa4759n@gre.ac.uk", "sp1234@gre.ac.uk", "nc2345@gre.ac.uk", "ob9876@gre.ac.uk", "zl4657@gre.ac.uk" };
+        string[] studentPassword = { "sunday@1", "sniper@2", "monday@3", "friday@4", "leader@5" };
+        string[] staffUsername = { "aa4760n@gre.ac.uk", "sp1234@gre.ac.uk", "nc2345@gre.ac.uk", "ob9876@gre.ac.uk", "zl4657@gre.ac.uk" };
+        string[] staffPassword = { "monday@1", "sniper@2", "monday@3", "friday@4", "leader@5" };
+
+        private string user;
+        public LoginPage(string user)
         {
             InitializeComponent();
+            this.user = user;
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             //this.Close();
 
-        
+           
             string enteredUsername = Username.username.Text;
           
             string enteredPassword = Password.password.Password;
 
-            bool found = false;
+            bool studentFound = false;
+            bool staffFound = false;
 
-            for(int i = 0; i < username.Length; i++)
+           
+            if (user == "student")
             {
-                if (username[i] == enteredUsername && password[i] == enteredPassword)
+                for (int i = 0; i < studentUsername.Length; i++)
                 {
-                    found = true;
-                    break;
+                    if (studentUsername[i] == enteredUsername && studentPassword[i] == enteredPassword)
+                    {
+                        studentFound = true;
+                        break;
+                    }
+                }
+            }
+            
+            if (user == "staff")
+            {
+                for (int i = 0; i < staffUsername.Length; i++)
+                {
+                    if (staffUsername[i] == enteredUsername && staffPassword[i] == enteredPassword)
+                    {
+                        staffFound = true;
+                        break;
+                    }
                 }
             }
 
-            if(found) 
+
+            if (staffFound) 
             {
-                MessageBox.Show("Login Succesfully!");
+                StaffHomepage homepage = new StaffHomepage();
+                homepage.Show();
+                this.Close();
+            }
+            else if(studentFound)
+            {
+                StudentWindow studentWindow = new StudentWindow();  
+                studentWindow.Show();
+                this.Close();
             }
             else
             {
