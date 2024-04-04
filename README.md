@@ -19,8 +19,6 @@
    
 [**Testing**](#4-testing)
 
-  * [Login Page Testing ](#4-login-page-testing)
-
 [**Conclusion**](#5-conculusion)
 
 ## 1. Introduction
