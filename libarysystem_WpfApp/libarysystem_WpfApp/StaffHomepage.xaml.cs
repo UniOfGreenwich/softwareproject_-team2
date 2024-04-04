@@ -30,5 +30,12 @@ namespace libarysystem_WpfApp
             profile.Show();
             this.Close();
         }
+
+        private void btnStudentAccount_Click(object sender, RoutedEventArgs e)
+        {
+            CheckStudentBalance checkStudentBalance = new CheckStudentBalance();
+            checkStudentBalance.Show();
+            this.Close();
+        }
     }
 }

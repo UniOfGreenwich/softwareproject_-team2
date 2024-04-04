@@ -114,7 +114,7 @@
                 <Button  Height="83" Background="#DDB892" 
                  Content="Student Account &#xD;&#xA;Management" FontWeight="Bold" 
                  FontSize="18" HorizontalAlignment="Center" 
-                 VerticalAlignment="Center" Width="192" />
+                 VerticalAlignment="Center" Width="192" Click="btnStudentAccount_Click" />
             </Grid>
             <!--Rent Book Button Panel-->
             <Grid Grid.Row="3" >

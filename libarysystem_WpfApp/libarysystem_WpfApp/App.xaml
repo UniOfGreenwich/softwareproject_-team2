@@ -2,7 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:libarysystem_WpfApp"
+<<<<<<< HEAD
              StartupUri="StaffHomepage.xaml">
+=======
+             StartupUri="User.xaml">
+>>>>>>> 8145acc23cd68248ffab0ffa2ea5146027e4f382
 
     <Application.Resources>
          
