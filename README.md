@@ -19,7 +19,6 @@
    
 [**Testing**](#4-testing)
 
-  * [Login Page Testing ](#4-login-page-testing)
 
 [**Conclusion**](#5-conculusion)
 
@@ -51,7 +50,7 @@ To document our progress and facilitate comprehensive understanding, a README.md
 
 ![alt text](1.jpg)
     
-    When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
+When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
 
  ![alt text](2.jpg)
 
@@ -62,17 +61,6 @@ To document our progress and facilitate comprehensive understanding, a README.md
 ### 3.4 Renting the books and journals 
 
 ## 4. Testing 
-
-### 4. Login Page Testing
-
-![alt text](3.jpg)
-
-       
-       If the password and the user name doesn’t match it raises a issue saying "invalid username or password" and takes the user back to the log in page .                                                                                                                                                                                                                                                                                                                             
-
-![alt text](4.jpg)
-
-    If the password and the username match on the system matches this window will pop up saying "Login Successfully!"
 
 ### 5. Conclusion 
 
