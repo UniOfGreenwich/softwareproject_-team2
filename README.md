@@ -17,12 +17,8 @@
 
  * [Renting the books and journals](#34-renting-the-books-and-journals)
    
-[**Testing**](#4-testing)
 
-
-[**Conclusion**](#5-conclusion)
-
-[**Appendix**](#6-appendix)
+[**Appendix**](#4-appendix)
 
 ## 1. Introduction
 
@@ -174,11 +170,7 @@ This window is exclusively accessible to staff members and serves as a user inte
 
 ---------
 
-## 4. Testing 
-
-## 5. Conclusion 
-
-## 6. Appendix
+## 4 Appendix
 
 ![StudentHomepage](https://github.com/TeachingMaterial/softwareproject_-team2/assets/146332575/ebd86cae-8c99-43a9-a903-0e0acac922c6)
 
