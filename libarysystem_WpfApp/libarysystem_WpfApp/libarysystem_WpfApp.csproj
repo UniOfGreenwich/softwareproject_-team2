@@ -9,7 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
     <None Remove="Images\Book 1.jpg" />
     <None Remove="Images\Book 2.jpg" />
     <None Remove="Images\Book 3.jpg" />
@@ -17,10 +16,8 @@
     <None Remove="Images\home.png" />
     <None Remove="Images\house.png" />
     <None Remove="Images\user.png" />
-=======
 
     <None Remove="Images\background.jpg" />
->>>>>>> 1795203fb56ce0b80fa79a4bbdfc8bc2ad4e3e9c
   </ItemGroup>
 
   <ItemGroup>

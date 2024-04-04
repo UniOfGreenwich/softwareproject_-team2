@@ -20,7 +20,7 @@ namespace libarysystem_WpfApp
     public partial class User : Window
     {
 
-        string user;
+        public string user;
         public User()
         {
             InitializeComponent();
@@ -28,18 +28,20 @@ namespace libarysystem_WpfApp
 
         private void StaffButton_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage login = new LoginPage();
+            user = "staff";
+            LoginPage login = new LoginPage(user);
             login.Show();
             this.Close();
-            user = "staff";
+            
         }
 
         private void StudentButton_Click(object sender, RoutedEventArgs e)
         {
-            LoginPage login = new LoginPage();
+            user = "student";
+            LoginPage login = new LoginPage(user);
             login.Show();
             this.Close();
-            user = "student";
+           
         }
     }
 }
