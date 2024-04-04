@@ -65,6 +65,67 @@ To conclude, we might consider our project to be a successful example of modern 
 
 ### 3.3 Balance management and payment page 
 
+#### Student Balance Management
+
+##### BalanceManagement Window
+
+Main Student Balance has the following functionalities:
+
+- Student Data: It keeps track of data regarding students, including name, ID, and unpaid fees. In this case, the student ID is put by default to 3 (for the sake of simulation).
+
+- Database Connection: It connects to an Access database through OleDb. The database file is saved to a specific path in OneDrive.
+
+
+- Display Outstanding Fee: Upon initialization, it retrieves and shows the outstanding fee for the logged-in student from the database.
+
+- Display Student's Name: It also retrieves and shows the name of the logged-in student from the database.
+
+- Update Balance: It has a function that updates the logged-in student's database balances.
+
+- Pay fee: The student can pay their fee by clicking on a button. It asks the user to input the amount they want to pay when they click., then it redirects to Payment Window. The student's balance is updated in the database and displayed if the payment is successful.
+
+The BalanceManagement Window's layout has buttons to pay the fee and labels to show the name, student ID, and amount owed. The layout is straightforward and easy to use. For a unified look and feel, the background and foreground colours are set to values. The window has the title "BalanceManagement" and is 640 pixels tall by 360 pixels wide.
+
+#### Payment Window
+
+Payment page has the following functionalities:
+
+- Enter Card Information: Users can enter card information on this page, such as name, number, expiration date, and CVV.
+
+- Payment Confirmation: The card information is verified when you click the "Confirm Payment" button. A success message appears, and the dialog result is set to true if the details are valid. An error warning appears, and the dialog result is set to false if the details are deemed invalid. 
+
+- Validation of Card Details: A basic simulation is used to validate the card details. The name cannot be empty, the card number must contain at least 13 characters, the CVV must contain at least 3 characters, and the expiration date must be current. 
+
+The Payment Window layout has two sections for input forms (one on the left and one on the right), a confirmation button at the bottom, and a central instruction text. Card number, name, expiration date, and CVV are among the input fields. The layout is straightforward and easy to use, making it quick to enter payment information.
+
+#### Staff Check Student Balance
+
+CheckStudentBalance Window is meant to assist staff in checking a student's balance by getting the amount from a database. 
+
+Functionalities:
+
+- Student ID Input:  Student IDs can be entered into this page by staff members. 
+- Verification of Balance: When a staff member clicks the "Verify Student Balance" button, their ID is checked and used to get the balance they owe from a database. A new ViewStudentBalance window opens to show the balance if the student is located, and the balance is accessible. An error notice is shown if the student cannot be located, or the balance is not available. 
+
+The layout of the CheckStudentBalance page consists of a title positioned at the top, a section where the student's ID can be entered, and a button that allows for the verification of the balance. Everything is conveniently aligned in the centre for effortless navigation and usability.
+
+The ViewStudentBalance Window provides staff with the ability to easily access and handle student fees.
+
+Functionalities:
+
+- Retrieve Student Data: Retrieves the outstanding fee and name of a student from a database by using the student's ID. 
+	
+- Student Data Display: Shows the student's ID, name, and outstanding fee on the page. 
+
+- Payment Input: Enables staff to input an amount for payment towards the student's fee, and redirects to the Payment Window described above.
+
+- Payment Confirmation: Verifies the payment and reflects the student's fee in the database. 
+
+- Balance Update: Displays the new balance following a successful payment.
+
+The layout of the ViewStudentBalance page consists of a title positioned at the top. It also includes a section where the student's ID, name, and outstanding fee are displayed. Additionally, there is a button provided for conveniently paying the student's fee. 
+
+
 ### 3.4 Renting the books and journals 
 
 ## 4. Testing 
