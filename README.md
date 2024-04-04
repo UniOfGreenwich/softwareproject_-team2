@@ -64,6 +64,8 @@ The StudentWindow.xaml is a critical document for developing the WPF library man
 
 To conclude, we might consider our project to be a successful example of modern development practices in application development, a collection of all WPF framework and C# language capabilities, empowering us to create a contemporary and visually appealing library management system with a great user experience.
 
+#### Staff Homepage
+A user-friendly interface designed specifically for staff members to effectively manage library operations is provided via this staff homepage. It has separate areas with buttons for managing student accounts and renting books, a recommendation panel with featured books, and a search bar for book requests. There are fast navigation choices to the main page, library section, and staff profile in the footer section. By using grids to organize the layout and adding visually appealing buttons with clear icons, this Staff Homepage streamlines library management operations and improves user experience.
 
 ### 3.3 Balance management and payment page 
 
