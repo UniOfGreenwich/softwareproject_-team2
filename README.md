@@ -48,15 +48,37 @@ To document our progress and facilitate comprehensive understanding, a README.md
 
 ## 3. Implementation 
 
-### 3.1 Login Page
+### 3.1 User Page 
 
-![alt text](1.jpg)
-    
-When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
+User page provides a user interface for selecting between two types of users (staff and student) in a library system. It presents a window with two buttons labeled "Staff" and "Student", respectively. When the user clicks on one of these buttons, the program records the user's selection (whether they are a staff member or a student) and then proceeds to open a login page tailored to the selected user type.
 
- ![alt text](2.jpg)
+Essentially, this code serves as the entry point for users to access the library system, directing them to the appropriate login page based on their role. By capturing this initial user selection, the program can customize the subsequent interactions and functionalities according to the user's role within the library system. This segregation of user roles is fundamental for managing access permissions, privileges, and functionalities tailored to the specific needs and responsibilities of staff and students within the library environment.
 
-### 3.2 Student and Staff Homepage 
+### 3.2 Login Page
+
+#### Authentication: 
+
+The primary goal is to authenticate users based on their provided credentials (username and password).
+
+#### User Distinction: 
+
+The application distinguishes between two types of users: students and staff. The login process is tailored accordingly to verify the credentials provided by each type of user.
+
+#### User Interface Interaction:
+
+The code interacts with the UI elements of the login page, such as text boxes for entering usernames and password boxes for entering passwords. It captures the user input and utilizes it for authentication.
+
+#### Navigation:
+
+Upon successful authentication, the code directs users to their respective homepages - either the student homepage or the staff homepage. This implies that the application has different functionalities or views tailored for each type of user.
+
+#### Feedback on Invalid Credentials:
+
+If the provided credentials do not match any stored credentials, the code provides feedback to the user by displaying a message box indicating that the entered username or password is invalid.
+
+Overall, the aim is to establish a secure and user-friendly login process that allows authorized users (students and staff) to access their designated functionalities within the library system application while maintaining the integrity and security of the system.
+
+### 3.3 Student and Staff Homepage 
 
 #### Student Homepage
 The StudentWindow.xaml is a critical document for developing the WPF library management system (LMS) app. It is the GUI working from the student’s homepage system of which the application is based. This file displays the interface design, navigation, and implementation of the system, which the users can exploit to accomplish their tasks associated with the features related to managing the account and utilizing the library resources. The main composing elements of this interface is visual including images, labels, buttons, and rectangles allocated to the grid structure to create the front-end in a more user-friendly and visually pleasing manner. This tab includes a search space with a search bar for students to search their chosen books from the library's system. The interface consists of buttons which defining the key options like user's accounts management and books renting. These buttons will always cause needed functions to be executed when clicked on since these corresponding functions are what the event handlers will perform. These, in turn, will facilitate seamless interaction with the system. The navigation elements, which are given the shape of a house, a book and an icon representing the user, respectively, allow the users to easily move around different areas of the app, including those with essential features and functionalities.
@@ -67,7 +89,7 @@ To conclude, we might consider our project to be a successful example of modern 
 #### Staff Homepage
 A user-friendly interface designed specifically for staff members to effectively manage library operations is provided via this staff homepage. It has separate areas with buttons for managing student accounts and renting books, a recommendation panel with featured books, and a search bar for book requests. There are fast navigation choices to the main page, library section, and staff profile in the footer section. By using grids to organize the layout and adding visually appealing buttons with clear icons, this Staff Homepage streamlines library management operations and improves user experience.
 
-### 3.3 Balance management and payment page 
+### 3.4 Balance management and payment page 
 
 #### Student Balance Management
 
@@ -130,7 +152,7 @@ Functionalities:
 The layout of the ViewStudentBalance page consists of a title positioned at the top. It also includes a section where the student's ID, name, and outstanding fee are displayed. Additionally, there is a button provided for conveniently paying the student's fee. 
 
 
-### 3.4 Renting the books and journals 
+### 3.5 Renting the books and journals 
 
 #### Rent books
 
