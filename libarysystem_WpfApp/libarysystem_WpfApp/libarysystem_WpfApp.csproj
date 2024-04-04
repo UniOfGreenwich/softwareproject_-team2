@@ -25,6 +25,11 @@
     <Resource Include="Images\books.png" />
     <Resource Include="Images\house.png" />
     <Resource Include="Images\user.png" />
+    <None Remove="Images\background.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\background.jpg" />
   </ItemGroup>
 
 </Project>
