@@ -119,7 +119,7 @@
             <!--Rent Book Button Panel-->
             <Grid Grid.Row="3" >
                 <Button  Background="#DDB892" Content="Rent Book" FontWeight="Bold" 
-                 FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="60" Width="137" />
+                 FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Top" Height="60" Width="137" Click="StaffIssueBookButton_Click"/>
             </Grid>
         </Grid>
 

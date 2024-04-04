@@ -20,6 +20,8 @@ namespace libarysystem_WpfApp
         public CheckStudentBalance()
         {
             InitializeComponent();
+
+
         }
 
         //function for retrieving student balance based on Student ID

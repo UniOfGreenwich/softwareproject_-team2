@@ -1,0 +1,31 @@
+﻿<Window x:Class="libarysystem_WpfApp.IssueBook"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:libarysystem_WpfApp"
+        mc:Ignorable="d"
+        Title="Issue Book" Height="640" Width="360" Background="#F5EBE0" Foreground="#000000">
+    <Grid>
+        <Border BorderBrush="#9C6644" BorderThickness="2" CornerRadius="10" Margin="20">
+            <StackPanel Margin="12,10,8,10">
+                <TextBlock Text="Staff Access Only" FontSize="16" FontWeight="Bold" HorizontalAlignment="Center" Margin="0 0 0 10"/>
+                <StackPanel>
+                    <TextBlock Text="Student ID:" FontSize="16" Margin="0 0 0 5"/>
+                    <TextBox x:Name="txtStudentID" FontSize="16" BorderThickness="1" Padding="5"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 0">
+                    <TextBlock Text="ISBN:" FontSize="16" Margin="0 0 0 5"/>
+                    <TextBox x:Name="txtISBN" FontSize="16" BorderThickness="1" Padding="5"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 0">
+                    <ComboBox Width="286" Height="39" x:Name="cmbBooks"/>
+                </StackPanel>
+                <StackPanel Margin="0 10 0 0">
+                    <Button Content="Search Books" FontSize="16" FontWeight="Bold" Background="#9C6644" Foreground="White" Padding="10" Click="SearchBooksButton_Click"/>
+                </StackPanel>
+            </StackPanel>
+            
+        </Border>
+    </Grid>
+</Window>

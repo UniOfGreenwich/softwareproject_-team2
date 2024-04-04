@@ -42,6 +42,11 @@ namespace libarysystem_WpfApp
             balanceManagement.Show();
             this.Close();
         }
+        private void StudentRentBookButton_Click(object Sender, RoutedEventArgs e) { 
+            RentBook rentBook = new RentBook();
+            rentBook.Show();
+            this.Close();
 
+        }
     }
 }
