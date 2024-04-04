@@ -6,10 +6,6 @@
         xmlns:local="clr-namespace:libarysystem_WpfApp"
         mc:Ignorable="d"
         Title="Profile" Height="640" Width="360">
-<<<<<<< HEAD
-
-=======
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     <Grid Background="#F5EBE0">
         <Grid.RowDefinitions>
             <!--For Header Panel-->
@@ -23,16 +19,6 @@
         <!--Header Panel-->
         <Grid Grid.Row="0" Background="#DDB892">
             <TextBlock  Text="PROFILE PAGE" FontSize="30" HorizontalAlignment="Center" FontWeight="Bold" 
-<<<<<<< HEAD
-            VerticalAlignment="Center"/>
-        </Grid>
-
-        <!--Content Panel-->
-        <Grid Grid.Row="1">
-
-        </Grid>
-
-=======
         VerticalAlignment="Center"/>
         </Grid>
 
@@ -76,7 +62,6 @@
         </Grid>
 
 
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
         <!--Footer Panel-->
         <Grid Grid.Row="2" Background="#DDB892">
             <Grid.ColumnDefinitions>
@@ -89,12 +74,8 @@
             </Grid.ColumnDefinitions>
 
             <!--Home Button-->
-<<<<<<< HEAD
-            <Button Grid.Column="0" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0" x:Name="homeButton" Click="homeButton_Click">
-=======
             <Button Grid.Column="0" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0" 
                     x:Name="homeButton" Click="HomeButton_Click" >
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
                 <Viewbox>
                     <Image Source="/Images/house.png"/>
                 </Viewbox>
@@ -106,20 +87,12 @@
                 </Viewbox>
             </Button>
             <!--Profile Button-->
-<<<<<<< HEAD
-            <Button Grid.Column="2" Background="Transparent" HorizontalAlignment="Center" BorderThickness="0">
-=======
             <Button Grid.Column="2" Background="Transparent" Opacity="0.5" HorizontalAlignment="Center" BorderThickness="3"
                     BorderBrush="Transparent">
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
                 <Viewbox>
                     <Image Source="/Images/user.png"/>
                 </Viewbox>
             </Button>
         </Grid>
-<<<<<<< HEAD
-=======
-
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     </Grid>
 </Window>

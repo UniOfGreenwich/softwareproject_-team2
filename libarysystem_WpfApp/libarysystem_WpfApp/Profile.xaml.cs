@@ -23,14 +23,6 @@ namespace libarysystem_WpfApp
         {
             InitializeComponent();
         }
-<<<<<<< HEAD
-        private void homeButton_Click(object sender, RoutedEventArgs e)
-        {
-            StudentWindow studentWindow = new StudentWindow();
-            studentWindow.Show();
-            this.Close();
-        }
-=======
 
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
@@ -43,6 +35,5 @@ namespace libarysystem_WpfApp
         {
 
         }
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     }
 }

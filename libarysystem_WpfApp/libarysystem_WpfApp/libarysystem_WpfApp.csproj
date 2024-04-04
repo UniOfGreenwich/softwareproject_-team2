@@ -9,32 +9,20 @@
   </PropertyGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <None Remove="Images\books.png" />
-    <None Remove="Images\ComputerNetworks.png" />
-    <None Remove="Images\EngineeringMaths.png" />
-=======
     <None Remove="Images\Book 1.jpg" />
     <None Remove="Images\Book 2.jpg" />
     <None Remove="Images\Book 3.jpg" />
     <None Remove="Images\books.png" />
     <None Remove="Images\home.png" />
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     <None Remove="Images\house.png" />
     <None Remove="Images\user.png" />
   </ItemGroup>
 
   <ItemGroup>
-<<<<<<< HEAD
-    <Resource Include="Images\books.png" />
-    <Resource Include="Images\ComputerNetworks.png" />
-    <Resource Include="Images\EngineeringMaths.png" />
-=======
     <Resource Include="Images\Book 1.jpg" />
     <Resource Include="Images\Book 2.jpg" />
     <Resource Include="Images\Book 3.jpg" />
     <Resource Include="Images\books.png" />
->>>>>>> dc05e76bc49838ec0b3edb1abe1ca2e012048be5
     <Resource Include="Images\house.png" />
     <Resource Include="Images\user.png" />
   </ItemGroup>
