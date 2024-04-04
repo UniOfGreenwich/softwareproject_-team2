@@ -11,11 +11,11 @@
 	<Grid>
 		<TextBlock Text="Check Student Balance" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,50" RenderTransformOrigin="0.46,0.501"></TextBlock>
 		<StackPanel HorizontalAlignment="Center">
-            <Label Content="Enter Student ID:" Margin="10,120,0,0" FontSize="15" FontWeight="Bold"/>
+            <Label Content="Enter Student ID:" Margin="10,120,0,0" HorizontalAlignment="Center" FontSize="15" FontWeight="Bold"/>
 		<Border BorderBrush="Black" BorderThickness="1" Padding="0" Width="100" >
 			<TextBox Name="txtStudentID" Width="100"  HorizontalAlignment="Left"/>
 		</Border>
-            <Button x:Name="btnVerifyStudent" Content="Verify Student Balance" HorizontalAlignment="Center" Margin="0,40" FontSize="17" FontWeight="Bold" Click="btnVerifyStudent_Click"></Button>
+            <Button x:Name="btnVerifyStudent" Padding="10" Content="Verify Student Balance" HorizontalAlignment="Center" Margin="0,40" FontSize="17" FontWeight="Bold" Click="btnVerifyStudent_Click"></Button>
 			
 		</StackPanel>
 	</Grid>

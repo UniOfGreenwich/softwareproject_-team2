@@ -11,7 +11,7 @@
 
  * [Login Page](##31-login-page)
 
- * [Student and Staff Home Page](##32-student-and-staff-home-page)
+ * [Student and Staff Homepage](##32-student-and-staff-home-page)
 
  * [Balance management and payment](#33-balance-managment-and-payment-page)
 
@@ -19,7 +19,6 @@
    
 [**Testing**](#4-testing)
 
-  * [Login Page Testing ](#4-login-page-testing)
 
 [**Conclusion**](#5-conculusion)
 
@@ -43,7 +42,7 @@ To document our progress and facilitate comprehensive understanding, a README.md
 | **Patel**, Saumya | 001257508 | sp0675d@gre.ac.uk | [SamEng001](https://github.com/SamEng001) |  [](#) Student Page[](#) |
 | **Rusnac**, Nicoleta | 001143379 | nr1227e@gre.ac.uk | [nicoletarusnac](https://github.com/nicoletarusnac) | Payment Page, Student and Staff management |, | Conclusion [](#) |
 | **Fashola**, Oba | 001272516 | of1104h@gre.ac.uk | [GeneralDavid9797](https://github.com/GeneralDavid9797) | Staff and Student Renting book and journal page, Late Penalty |,  [](#)
-| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Staff Home Page|, |  [](#) |
+| **Abdullah**, Ali | 001258128 | aa4759n@gre.ac.uk | [Ali-Abdullah786](https://github.com/Ali-Abdullah786) | Staff Homepage|, |  [](#) |
 
 ## 3. Implementation 
 
@@ -51,28 +50,24 @@ To document our progress and facilitate comprehensive understanding, a README.md
 
 ![alt text](1.jpg)
     
-    When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
+When people first log in to the app this page going to welcome them asking if they are student or staff once they choose one it will take them to the Login page where they can enter their login details. 
 
  ![alt text](2.jpg)
 
-### 3.2 Student and Staff Home Page 
+### 3.2 Student and Staff Homepage 
+
+#### Student Homepage
+The StudentWindow.xaml is a critical document for developing the WPF library management system (LMS) app. It is the GUI working from the student’s homepage system of which the application is based. This file displays the interface design, navigation, and implementation of the system, which the users can exploit to accomplish their tasks associated with the features related to managing the account and utilizing the library resources. The main composing elements of this interface is visual including images, labels, buttons, and rectangles allocated to the grid structure to create the front-end in a more user-friendly and visually pleasing manner. This tab includes a search space with a search bar for students to search their chosen books from the library's system. The interface consists of buttons which defining the key options like user's accounts management and books renting. These buttons will always cause needed functions to be executed when clicked on since these corresponding functions are what the event handlers will perform. These, in turn, will facilitate seamless interaction with the system. The navigation elements, which are given the shape of a house, a book and an icon representing the user, respectively, allow the users to easily move around different areas of the app, including those with essential features and functionalities.
+
+
+To conclude, we might consider our project to be a successful example of modern development practices in application development, a collection of all WPF framework and C# language capabilities, empowering us to create a contemporary and visually appealing library management system with a great user experience.
+
 
 ### 3.3 Balance management and payment page 
 
 ### 3.4 Renting the books and journals 
 
 ## 4. Testing 
-
-### 4. Login Page Testing
-
-![alt text](3.jpg)
-
-       
-       If the password and the user name doesn’t match it raises a issue saying "invalid username or password" and takes the user back to the log in page .                                                                                                                                                                                                                                                                                                                             
-
-![alt text](4.jpg)
-
-    If the password and the username match on the system matches this window will pop up saying "Login Successfully!"
 
 ### 5. Conclusion 
 

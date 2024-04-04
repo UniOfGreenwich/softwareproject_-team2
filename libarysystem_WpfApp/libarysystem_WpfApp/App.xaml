@@ -2,7 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:libarysystem_WpfApp"
+<<<<<<< HEAD
              StartupUri="User.xaml">
+=======
+             StartupUri="CheckStudentBalance.xaml">
+>>>>>>> 009816d68ac0f46e9071f70af8745aa1dd0b1c73
 
     <Application.Resources>
          

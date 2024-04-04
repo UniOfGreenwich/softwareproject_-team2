@@ -2,6 +2,10 @@
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Controls.Primitives;
+<<<<<<< HEAD
+=======
+//using Finisar.SQLite;
+>>>>>>> 009816d68ac0f46e9071f70af8745aa1dd0b1c73
 using libarysystem_WpfApp.UserControls;
 
 namespace libarysystem_WpfApp
