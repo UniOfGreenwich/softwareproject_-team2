@@ -19,6 +19,7 @@ namespace libarysystem_WpfApp
         private string user;
         public LoginPage(string user)
         {
+           
             InitializeComponent();
             this.user = user;
         }

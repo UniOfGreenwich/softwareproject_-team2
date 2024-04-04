@@ -30,6 +30,18 @@ namespace libarysystem_WpfApp
             profile.Show();
             this.Close();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void StaffIssueBookButton_Click(object sender, RoutedEventArgs e)
+        {
+            IssueBook issueBook= new IssueBook();
+            issueBook.Show();
+            this.Close();
+        }
     }
 
 }
